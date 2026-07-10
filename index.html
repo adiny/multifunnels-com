@@ -239,7 +239,7 @@ h1 {
 
 .trust-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--surface);
@@ -298,7 +298,7 @@ h1 {
 }
 
 .product-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .feature-card,
@@ -365,6 +365,10 @@ h1 {
 
 .product-card:nth-child(4) {
   border-top-color: var(--green);
+}
+
+.product-card.agentroam-card {
+  border-top-color: var(--teal);
 }
 
 .product-card a {
@@ -512,6 +516,7 @@ h1 {
         <a href="#agents" data-i18n="navAgents">Agents</a>
         <a href="#platforms" data-i18n="navPlatforms">Platforms</a>
         <a href="hotel-search-agent.html">Hotel Skill</a>
+        <a href="integrations.html">AI Integrations</a>
         <a href="#integration" data-i18n="navIntegration">Integration</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
@@ -520,10 +525,10 @@ h1 {
         <span data-i18n="languageLabel">Language</span>
         <select id="language" aria-label="Language">
           <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="he">עברית</option>
-          <option value="ar">العربية</option>
-          <option value="ja">日本語</option>
+          <option value="es">Espaֳ±ol</option>
+          <option value="he">׳¢׳‘׳¨׳™׳×</option>
+          <option value="ar">״§„״¹״±״¨״©</option>
+          <option value="ja">ז—¥ז¬ט×</option>
         </select>
       </label>
     </header>
@@ -553,6 +558,7 @@ h1 {
       </section>
 
       <section class="trust-strip" aria-label="Featured products">
+        <a href="https://agentroam.ai/" target="_blank" rel="noreferrer">AgentRoam.ai</a>
         <a href="https://moodtrip.ai/" target="_blank" rel="noreferrer">MoodTrip.Ai</a>
         <a href="https://flights.moodtrip.ai/" target="_blank" rel="noreferrer">Adin Search Flights</a>
         <a href="https://api.moodtrip.ai/api/mcp" target="_blank" rel="noreferrer">HotelSearchAgent MCP</a>
@@ -595,6 +601,13 @@ h1 {
           <h2 data-i18n="platformsTitle">A practical AI travel stack, already in motion.</h2>
         </div>
         <div class="product-grid">
+          <article class="product-card agentroam-card">
+            <h3>AgentRoam.ai</h3>
+            <p data-i18n="agentRoamCopy">
+              An AI-ready travel eSIM marketplace for live plan comparison, crypto checkout, QR delivery, and MCP-powered purchasing workflows.
+            </p>
+            <a href="https://agentroam.ai/" target="_blank" rel="noreferrer" data-i18n="visitSite">Visit site</a>
+          </article>
           <article class="product-card">
             <h3>MoodTrip.Ai</h3>
             <p data-i18n="moodtripCopy">
@@ -664,7 +677,7 @@ h1 {
     </main>
 
     <footer class="site-footer">
-      <span>© <span id="year"></span> Multifunnels.com</span>
+      <span>ֲ© <span id="year"></span> Multifunnels.com</span>
       <span data-i18n="footerText">AI agent development for search, travel, and business automation.</span>
     </footer>
 
@@ -696,6 +709,8 @@ const translations = {
     platformsTitle: "A practical AI travel stack, already in motion.",
     moodtripCopy:
       "A hotel search experience where travelers describe the stay they want and receive relevant options.",
+    agentRoamCopy:
+      "An AI-ready travel eSIM marketplace for live plan comparison, crypto checkout, QR delivery, and MCP-powered purchasing workflows.",
     flightsCopy: "A flight search product by MoodTrip.Ai for fast destination, date, and route exploration.",
     hotelAgentCopy: "An MCP endpoint for connecting hotel search capabilities to AI assistants and agentic workflows.",
     flightAgentCopy: "A flight-search MCP HTTP endpoint for building assistants that can work with live travel tools.",
@@ -717,181 +732,119 @@ const translations = {
     footerText: "AI agent development for search, travel, and business automation.",
   },
   es: {
-    languageLabel: "Idioma",
-    navAgents: "Agentes",
-    navPlatforms: "Plataformas",
-    navIntegration: "Integración",
-    navContact: "Contacto",
-    eyebrow: "Empresa de desarrollo de agentes de IA",
-    heroTitle: "Creamos agentes de IA que buscan, razonan, reservan e integran.",
-    heroCopy:
-      "Multifunnels convierte flujos complejos de viajes, hoteles, vuelos y búsqueda empresarial en productos agentivos fiables, impulsados por APIs listas para MCP y automatización de producción.",
-    primaryCta: "Crear un agente de IA",
-    secondaryCta: "Explorar plataformas",
-    agentsKicker: "Qué construimos",
-    agentsTitle: "Productos agentivos para búsquedas de alta intención y conversión.",
-    featureOneTitle: "Agentes de búsqueda",
-    featureOneCopy:
-      "Agentes de descubrimiento en lenguaje natural que entienden restricciones, comparan opciones y devuelven resultados accionables.",
-    featureTwoTitle: "Flujos de reserva",
-    featureTwoCopy:
-      "Flujos guiados para hoteles, vuelos y funnels de servicio con estado claro, validación y puntos de traspaso.",
-    featureThreeTitle: "Integraciones MCP",
-    featureThreeCopy:
-      "APIs listas para herramientas que conectan agentes con inventario en vivo, sistemas de negocio y aplicaciones externas.",
-    platformsKicker: "Ecosistema activo",
-    platformsTitle: "Una pila práctica de IA para viajes, ya en movimiento.",
-    moodtripCopy:
-      "Una experiencia de búsqueda de hoteles donde los viajeros describen la estadía que quieren y reciben opciones relevantes.",
-    flightsCopy: "Un producto de búsqueda de vuelos de MoodTrip.Ai para explorar destinos, fechas y rutas rápidamente.",
-    hotelAgentCopy:
-      "Un endpoint MCP para conectar capacidades de búsqueda hotelera con asistentes de IA y flujos agentivos.",
-    flightAgentCopy:
-      "Un endpoint MCP HTTP de búsqueda de vuelos para crear asistentes que trabajan con herramientas de viaje en vivo.",
-    visitSite: "Visitar sitio",
-    viewEndpoint: "Ver endpoint",
-    processKicker: "Cómo entregamos",
-    processTitle: "De la lógica del funnel al agente de IA desplegado.",
-    stepOneTitle: "Mapear el funnel",
-    stepOneCopy: "Definimos la intención del usuario, restricciones, herramientas y puntos de conversión.",
-    stepTwoTitle: "Conectar herramientas",
-    stepTwoCopy: "Conectamos APIs, servidores MCP, fuentes de datos y sistemas operativos.",
-    stepThreeTitle: "Lanzar el agente",
-    stepThreeCopy: "Enviamos un producto medible con monitoreo, iteración y próximas acciones claras.",
-    contactKicker: "Empezar a construir",
-    contactTitle: "Convierte tu funnel en un producto de IA.",
-    contactCopy:
-      "Multifunnels desarrolla agentes de IA, integraciones MCP y productos de búsqueda para empresas que necesitan software que actúe, no solo responda.",
+    …1336 tokens truncated…׳˜׳™׳¡׳•׳× ׳•׳₪׳׳ ׳׳™׳ ׳©׳™׳¨׳•׳×׳™׳™׳ ׳¢׳ ׳׳¦׳‘ ׳‘׳¨׳•׳¨, ׳•׳׳™׳“׳¦׳™׳” ׳•׳ ׳§׳•׳“׳•׳× ׳”׳¢׳‘׳¨׳”.",
+    featureThreeTitle: "׳׳™׳ ׳˜׳’׳¨׳¦׳™׳•׳× MCP",
+    featureThreeCopy: "׳׳׳©׳§׳™ API ׳׳•׳›׳ ׳™׳ ׳׳›׳׳™׳ ׳©׳׳—׳‘׳¨׳™׳ ׳¡׳•׳›׳ ׳™׳ ׳׳׳׳׳™ ׳—׳™, ׳׳¢׳¨׳›׳•׳× ׳¢׳¡׳§׳™׳•׳× ׳•׳׳₪׳׳™׳§׳¦׳™׳•׳× ׳—׳™׳¦׳•׳ ׳™׳•׳×.",
+    platformsKicker: "׳׳§׳•׳¡׳™׳¡׳˜׳ ׳₪׳¢׳™׳",
+    platformsTitle: "׳׳¢׳¨׳ AI ׳׳¢׳©׳™ ׳׳¢׳•׳׳ ׳”׳×׳™׳™׳¨׳•׳×, ׳©׳›׳‘׳¨ ׳¢׳•׳‘׳“.",
+    moodtripCopy: "׳—׳•׳•׳™׳™׳× ׳—׳™׳₪׳•׳© ׳׳׳•׳ ׳•׳× ׳©׳‘׳” ׳׳˜׳™׳™׳׳™׳ ׳׳×׳׳¨׳™׳ ׳׳× ׳”׳©׳”׳™׳™׳” ׳©׳”׳ ׳¨׳•׳¦׳™׳ ׳•׳׳§׳‘׳׳™׳ ׳׳₪׳©׳¨׳•׳™׳•׳× ׳¨׳׳•׳•׳ ׳˜׳™׳•׳×.",
+    agentRoamCopy: "׳׳×׳¨ eSIM ׳׳ ׳¡׳™׳¢׳•׳× ׳”׳׳•׳›׳ ׳׳¡׳•׳›׳ ׳™ AI, ׳¢׳ ׳”׳©׳•׳•׳׳× ׳—׳‘׳™׳׳•׳× ׳‘׳–׳׳ ׳׳׳×, ׳×׳©׳׳•׳ ׳‘׳§׳¨׳™׳₪׳˜׳•, ׳׳¡׳™׳¨׳” ׳‘׳§׳•׳“ QR ׳•׳×׳”׳׳™׳›׳™ ׳¨׳›׳™׳©׳” ׳‘׳׳׳¦׳¢׳•׳× MCP.",
+    flightsCopy: "׳׳•׳¦׳¨ ׳—׳™׳₪׳•׳© ׳˜׳™׳¡׳•׳× ׳©׳ MoodTrip.Ai ׳׳—׳§׳™׳¨׳” ׳׳”׳™׳¨׳” ׳©׳ ׳™׳¢׳“׳™׳, ׳×׳׳¨׳™׳›׳™׳ ׳•׳׳¡׳׳•׳׳™׳.",
+    hotelAgentCopy: "׳ ׳§׳•׳“׳× ׳§׳¦׳” MCP ׳׳—׳™׳‘׳•׳¨ ׳™׳›׳•׳׳•׳× ׳—׳™׳₪׳•׳© ׳׳׳•׳ ׳•׳× ׳׳¢׳•׳–׳¨׳™ AI ׳•׳׳×׳”׳׳™׳›׳™ ׳¡׳•׳›׳ ׳™׳.",
+    flightAgentCopy: "׳ ׳§׳•׳“׳× ׳§׳¦׳” MCP HTTP ׳׳—׳™׳₪׳•׳© ׳˜׳™׳¡׳•׳× ׳•׳׳‘׳ ׳™׳™׳× ׳¢׳•׳–׳¨׳™׳ ׳©׳¢׳•׳‘׳“׳™׳ ׳¢׳ ׳›׳׳™ ׳×׳™׳™׳¨׳•׳× ׳—׳™׳™׳.",
+    visitSite: "׳›׳ ׳™׳¡׳” ׳׳׳×׳¨",
+    viewEndpoint: "׳¦׳₪׳™׳™׳” ׳‘׳ ׳§׳•׳“׳× ׳”׳§׳¦׳”",
+    processKicker: "׳׳™׳ ׳׳ ׳—׳ ׳• ׳׳¡׳₪׳§׳™׳",
+    processTitle: "׳׳׳•׳’׳™׳§׳× ׳₪׳׳ ׳ ׳׳¡׳•׳›׳ AI ׳‘׳׳•׳•׳™׳¨.",
+    stepOneTitle: "׳׳׳₪׳™׳ ׳׳× ׳”׳₪׳׳ ׳",
+    stepOneCopy: "׳׳ ׳—׳ ׳• ׳׳’׳“׳™׳¨׳™׳ ׳׳× ׳›׳•׳•׳ ׳× ׳”׳׳©׳×׳׳©, ׳”׳׳’׳‘׳׳•׳×, ׳”׳›׳׳™׳ ׳•׳ ׳§׳•׳“׳•׳× ׳”׳”׳׳¨׳”.",
+    stepTwoTitle: "׳׳—׳‘׳¨׳™׳ ׳׳× ׳”׳›׳׳™׳",
+    stepTwoCopy: "׳׳ ׳—׳ ׳• ׳׳—׳‘׳¨׳™׳ API, ׳©׳¨׳×׳™ MCP, ׳׳§׳•׳¨׳•׳× ׳׳™׳“׳¢ ׳•׳׳¢׳¨׳›׳•׳× ׳×׳₪׳¢׳•׳.",
+    stepThreeTitle: "׳׳©׳™׳§׳™׳ ׳׳× ׳”׳¡׳•׳›׳",
+    stepThreeCopy: "׳׳ ׳—׳ ׳• ׳׳©׳™׳§׳™׳ ׳׳•׳¦׳¨ ׳׳“׳™׳“ ׳¢׳ ׳ ׳™׳˜׳•׳¨, ׳©׳™׳₪׳•׳¨ ׳׳×׳׳©׳ ׳•׳₪׳¢׳•׳׳•׳× ׳”׳׳©׳ ׳‘׳¨׳•׳¨׳•׳×.",
+    contactKicker: "׳׳×׳—׳™׳׳™׳ ׳׳‘׳ ׳•׳×",
+    contactTitle: "׳”׳₪׳›׳• ׳׳× ׳”׳₪׳׳ ׳ ׳©׳׳›׳ ׳׳׳•׳¦׳¨ AI.",
+    contactCopy: "Multifunnels ׳׳₪׳×׳—׳× ׳¡׳•׳›׳ ׳™ AI, ׳׳™׳ ׳˜׳’׳¨׳¦׳™׳•׳× MCP ׳•׳׳•׳¦׳¨׳™ ׳—׳™׳₪׳•׳© ׳׳—׳‘׳¨׳•׳× ׳©׳¦׳¨׳™׳›׳•׳× ׳×׳•׳›׳ ׳” ׳©׳₪׳•׳¢׳׳×, ׳׳ ׳¨׳§ ׳¢׳•׳ ׳”.",
     contactCta: "info@multifunnels.com",
-    footerText: "Desarrollo de agentes de IA para búsqueda, viajes y automatización empresarial.",
-  },
-  he: {
-    languageLabel: "שפה",
-    navAgents: "סוכנים",
-    navPlatforms: "פלטפורמות",
-    navIntegration: "אינטגרציה",
-    navContact: "יצירת קשר",
-    eyebrow: "חברת פיתוח סוכני AI",
-    heroTitle: "אנחנו בונים סוכני AI שמחפשים, חושבים, מזמינים ומתחברים.",
-    heroCopy:
-      "Multifunnels הופכת תהליכי חיפוש מורכבים של תיירות, מלונות, טיסות ועסקים למוצרי סוכנים אמינים, עם API מוכן ל-MCP ואוטומציה ברמת פרודקשן.",
-    primaryCta: "בנו סוכן AI",
-    secondaryCta: "גלו את הפלטפורמות",
-    agentsKicker: "מה אנחנו בונים",
-    agentsTitle: "מוצרי סוכנים לחיפוש עם כוונה גבוהה והמרה.",
-    featureOneTitle: "סוכני חיפוש",
-    featureOneCopy: "סוכני גילוי בשפה טבעית שמבינים מגבלות, משווים אפשרויות ומחזירים תוצאות שאפשר לפעול לפיהן.",
-    featureTwoTitle: "תהליכי הזמנה",
-    featureTwoCopy: "זרימות מונחות למלונות, טיסות ופאנלים שירותיים עם מצב ברור, ולידציה ונקודות העברה.",
-    featureThreeTitle: "אינטגרציות MCP",
-    featureThreeCopy: "ממשקי API מוכנים לכלים שמחברים סוכנים למלאי חי, מערכות עסקיות ואפליקציות חיצוניות.",
-    platformsKicker: "אקוסיסטם פעיל",
-    platformsTitle: "מערך AI מעשי לעולם התיירות, שכבר עובד.",
-    moodtripCopy: "חוויית חיפוש מלונות שבה מטיילים מתארים את השהייה שהם רוצים ומקבלים אפשרויות רלוונטיות.",
-    flightsCopy: "מוצר חיפוש טיסות של MoodTrip.Ai לחקירה מהירה של יעדים, תאריכים ומסלולים.",
-    hotelAgentCopy: "נקודת קצה MCP לחיבור יכולות חיפוש מלונות לעוזרי AI ולתהליכי סוכנים.",
-    flightAgentCopy: "נקודת קצה MCP HTTP לחיפוש טיסות ולבניית עוזרים שעובדים עם כלי תיירות חיים.",
-    visitSite: "כניסה לאתר",
-    viewEndpoint: "צפייה בנקודת הקצה",
-    processKicker: "איך אנחנו מספקים",
-    processTitle: "מלוגיקת פאנל לסוכן AI באוויר.",
-    stepOneTitle: "ממפים את הפאנל",
-    stepOneCopy: "אנחנו מגדירים את כוונת המשתמש, המגבלות, הכלים ונקודות ההמרה.",
-    stepTwoTitle: "מחברים את הכלים",
-    stepTwoCopy: "אנחנו מחברים API, שרתי MCP, מקורות מידע ומערכות תפעול.",
-    stepThreeTitle: "משיקים את הסוכן",
-    stepThreeCopy: "אנחנו משיקים מוצר מדיד עם ניטור, שיפור מתמשך ופעולות המשך ברורות.",
-    contactKicker: "מתחילים לבנות",
-    contactTitle: "הפכו את הפאנל שלכם למוצר AI.",
-    contactCopy: "Multifunnels מפתחת סוכני AI, אינטגרציות MCP ומוצרי חיפוש לחברות שצריכות תוכנה שפועלת, לא רק עונה.",
-    contactCta: "info@multifunnels.com",
-    footerText: "פיתוח סוכני AI לחיפוש, תיירות ואוטומציה עסקית.",
+    footerText: "׳₪׳™׳×׳•׳— ׳¡׳•׳›׳ ׳™ AI ׳׳—׳™׳₪׳•׳©, ׳×׳™׳™׳¨׳•׳× ׳•׳׳•׳˜׳•׳׳¦׳™׳” ׳¢׳¡׳§׳™׳×.",
   },
   ar: {
-    languageLabel: "اللغة",
-    navAgents: "الوكلاء",
-    navPlatforms: "المنصات",
-    navIntegration: "التكامل",
-    navContact: "تواصل",
-    eyebrow: "شركة تطوير وكلاء الذكاء الاصطناعي",
-    heroTitle: "نبني وكلاء ذكاء اصطناعي يبحثون ويفكرون ويحجزون ويتكاملون.",
+    languageLabel: "״§„„״÷״©",
+    navAgents: "״§„ˆƒ„״§״¡",
+    navPlatforms: "״§„…†״µ״§״×",
+    navIntegration: "״§„״×ƒ״§…„",
+    navContact: "״×ˆ״§״µ„",
+    eyebrow: "״´״±ƒ״© ״×״·ˆ״± ˆƒ„״§״¡ ״§„״°ƒ״§״¡ ״§„״§״µ״·†״§״¹",
+    heroTitle: "†״¨† ˆƒ„״§״¡ ״°ƒ״§״¡ ״§״µ״·†״§״¹ ״¨״­״«ˆ† ˆƒ״±ˆ† ˆ״­״¬״²ˆ† ˆ״×ƒ״§…„ˆ†.",
     heroCopy:
-      "تحول Multifunnels مسارات السفر والفنادق والرحلات والبحث التجاري المعقدة إلى منتجات وكيلة موثوقة، مدعومة بواجهات API جاهزة لـ MCP وأتمتة بمستوى إنتاجي.",
-    primaryCta: "ابن وكيل ذكاء اصطناعي",
-    secondaryCta: "استكشف المنصات",
-    agentsKicker: "ما الذي نبنيه",
-    agentsTitle: "منتجات وكيلة للبحث عالي النية والتحويل.",
-    featureOneTitle: "وكلاء البحث",
-    featureOneCopy: "وكلاء اكتشاف باللغة الطبيعية يفهمون القيود ويقارنون الخيارات ويعيدون نتائج قابلة للتنفيذ.",
-    featureTwoTitle: "مسارات الحجز",
-    featureTwoCopy: "تدفقات موجهة للفنادق والرحلات وقنوات الخدمة مع حالة واضحة، تحقق، ونقاط تسليم.",
-    featureThreeTitle: "تكاملات MCP",
-    featureThreeCopy: "واجهات API جاهزة للأدوات تربط الوكلاء بالمخزون الحي وأنظمة الأعمال والتطبيقات الخارجية.",
-    platformsKicker: "منظومة حية",
-    platformsTitle: "مجموعة عملية لذكاء السفر الاصطناعي تعمل بالفعل.",
-    moodtripCopy: "تجربة بحث عن الفنادق يصف فيها المسافرون الإقامة المطلوبة ويتلقون خيارات ملائمة.",
-    flightsCopy: "منتج بحث عن الرحلات من MoodTrip.Ai لاستكشاف الوجهات والتواريخ والمسارات بسرعة.",
-    hotelAgentCopy: "نقطة نهاية MCP لربط قدرات بحث الفنادق بمساعدي الذكاء الاصطناعي وسير العمل الوكيل.",
-    flightAgentCopy: "نقطة نهاية MCP HTTP لبحث الرحلات وبناء مساعدين يعملون مع أدوات سفر حية.",
-    visitSite: "زيارة الموقع",
-    viewEndpoint: "عرض نقطة النهاية",
-    processKicker: "كيف ننجز",
-    processTitle: "من منطق القمع إلى وكيل ذكاء اصطناعي منشور.",
-    stepOneTitle: "رسم القمع",
-    stepOneCopy: "نحدد نية المستخدم والقيود والأدوات ونقاط التحويل.",
-    stepTwoTitle: "ربط الأدوات",
-    stepTwoCopy: "نربط واجهات API وخوادم MCP ومصادر البيانات والأنظمة التشغيلية.",
-    stepThreeTitle: "إطلاق الوكيل",
-    stepThreeCopy: "نطلق منتجا قابلا للقياس مع مراقبة وتحسين وخطوات تالية واضحة.",
-    contactKicker: "ابدأ البناء",
-    contactTitle: "حوّل قمعك إلى منتج ذكاء اصطناعي.",
+      "״×״­ˆ„ Multifunnels …״³״§״±״§״× ״§„״³״± ˆ״§„†״§״¯‚ ˆ״§„״±״­„״§״× ˆ״§„״¨״­״« ״§„״×״¬״§״± ״§„…״¹‚״¯״© ״¥„‰ …†״×״¬״§״× ˆƒ„״© …ˆ״«ˆ‚״©״ …״¯״¹ˆ…״© ״¨ˆ״§״¬‡״§״× API ״¬״§‡״²״© „€ MCP ˆ״£״×…״×״© ״¨…״³״×ˆ‰ ״¥†״×״§״¬.",
+    primaryCta: "״§״¨† ˆƒ„ ״°ƒ״§״¡ ״§״µ״·†״§״¹",
+    secondaryCta: "״§״³״×ƒ״´ ״§„…†״µ״§״×",
+    agentsKicker: "…״§ ״§„״° †״¨†‡",
+    agentsTitle: "…†״×״¬״§״× ˆƒ„״© „„״¨״­״« ״¹״§„ ״§„†״© ˆ״§„״×״­ˆ„.",
+    featureOneTitle: "ˆƒ„״§״¡ ״§„״¨״­״«",
+    featureOneCopy: "ˆƒ„״§״¡ ״§ƒ״×״´״§ ״¨״§„„״÷״© ״§„״·״¨״¹״© ‡…ˆ† ״§„‚ˆ״¯ ˆ‚״§״±†ˆ† ״§„״®״§״±״§״× ˆ״¹״¯ˆ† †״×״§״¦״¬ ‚״§״¨„״© „„״×†״°.",
+    featureTwoTitle: "…״³״§״±״§״× ״§„״­״¬״²",
+    featureTwoCopy: "״×״¯‚״§״× …ˆ״¬‡״© „„†״§״¯‚ ˆ״§„״±״­„״§״× ˆ‚†ˆ״§״× ״§„״®״¯…״© …״¹ ״­״§„״© ˆ״§״¶״­״©״ ״×״­‚‚״ ˆ†‚״§״· ״×״³„….",
+    featureThreeTitle: "״×ƒ״§…„״§״× MCP",
+    featureThreeCopy: "ˆ״§״¬‡״§״× API ״¬״§‡״²״© „„״£״¯ˆ״§״× ״×״±״¨״· ״§„ˆƒ„״§״¡ ״¨״§„…״®״²ˆ† ״§„״­ ˆ״£†״¸…״© ״§„״£״¹…״§„ ˆ״§„״×״·״¨‚״§״× ״§„״®״§״±״¬״©.",
+    platformsKicker: "…†״¸ˆ…״© ״­״©",
+    platformsTitle: "…״¬…ˆ״¹״© ״¹…„״© „״°ƒ״§״¡ ״§„״³״± ״§„״§״µ״·†״§״¹ ״×״¹…„ ״¨״§„״¹„.",
+    moodtripCopy: "״×״¬״±״¨״© ״¨״­״« ״¹† ״§„†״§״¯‚ ״µ ‡״§ ״§„…״³״§״±ˆ† ״§„״¥‚״§…״© ״§„…״·„ˆ״¨״© ˆ״×„‚ˆ† ״®״§״±״§״× …„״§״¦…״©.",
+    agentRoamCopy: "״³ˆ‚ ״´״±״§״¦״­ eSIM „„״³״± ״¬״§‡״² „ˆƒ„״§״¡ ״§„״°ƒ״§״¡ ״§„״§״µ״·†״§״¹״ …״¹ …‚״§״±†״© …״¨״§״´״±״© „„״®״·״· ˆ״§„״¯״¹ ״¨״§„״¹…„״§״× ״§„״±‚…״© ˆ״§„״×״³„… ״¹״¨״± QR ˆ״¹…„״§״× ״´״±״§״¡ ״¨ˆ״§״³״·״© MCP.",
+    flightsCopy: "…†״×״¬ ״¨״­״« ״¹† ״§„״±״­„״§״× …† MoodTrip.Ai „״§״³״×ƒ״´״§ ״§„ˆ״¬‡״§״× ˆ״§„״×ˆ״§״±״® ˆ״§„…״³״§״±״§״× ״¨״³״±״¹״©.",
+    hotelAgentCopy: "†‚״·״© †‡״§״© MCP „״±״¨״· ‚״¯״±״§״× ״¨״­״« ״§„†״§״¯‚ ״¨…״³״§״¹״¯ ״§„״°ƒ״§״¡ ״§„״§״µ״·†״§״¹ ˆ״³״± ״§„״¹…„ ״§„ˆƒ„.",
+    flightAgentCopy: "†‚״·״© †‡״§״© MCP HTTP „״¨״­״« ״§„״±״­„״§״× ˆ״¨†״§״¡ …״³״§״¹״¯† ״¹…„ˆ† …״¹ ״£״¯ˆ״§״× ״³״± ״­״©.",
+    visitSite: "״²״§״±״© ״§„…ˆ‚״¹",
+    viewEndpoint: "״¹״±״¶ †‚״·״© ״§„†‡״§״©",
+    processKicker: "ƒ ††״¬״²",
+    processTitle: "…† …†״·‚ ״§„‚…״¹ ״¥„‰ ˆƒ„ ״°ƒ״§״¡ ״§״µ״·†״§״¹ …†״´ˆ״±.",
+    stepOneTitle: "״±״³… ״§„‚…״¹",
+    stepOneCopy: "†״­״¯״¯ †״© ״§„…״³״×״®״¯… ˆ״§„‚ˆ״¯ ˆ״§„״£״¯ˆ״§״× ˆ†‚״§״· ״§„״×״­ˆ„.",
+    stepTwoTitle: "״±״¨״· ״§„״£״¯ˆ״§״×",
+    stepTwoCopy: "†״±״¨״· ˆ״§״¬‡״§״× API ˆ״®ˆ״§״¯… MCP ˆ…״µ״§״¯״± ״§„״¨״§†״§״× ˆ״§„״£†״¸…״© ״§„״×״´״÷„״©.",
+    stepThreeTitle: "״¥״·„״§‚ ״§„ˆƒ„",
+    stepThreeCopy: "†״·„‚ …†״×״¬״§ ‚״§״¨„״§ „„‚״§״³ …״¹ …״±״§‚״¨״© ˆ״×״­״³† ˆ״®״·ˆ״§״× ״×״§„״© ˆ״§״¶״­״©.",
+    contactKicker: "״§״¨״¯״£ ״§„״¨†״§״¡",
+    contactTitle: "״­ˆ‘„ ‚…״¹ƒ ״¥„‰ …†״×״¬ ״°ƒ״§״¡ ״§״µ״·†״§״¹.",
     contactCopy:
-      "تطور Multifunnels وكلاء ذكاء اصطناعي وتكاملات MCP ومنتجات بحث للشركات التي تحتاج إلى برمجيات تفعل، لا تجيب فقط.",
+      "״×״·ˆ״± Multifunnels ˆƒ„״§״¡ ״°ƒ״§״¡ ״§״µ״·†״§״¹ ˆ״×ƒ״§…„״§״× MCP ˆ…†״×״¬״§״× ״¨״­״« „„״´״±ƒ״§״× ״§„״× ״×״­״×״§״¬ ״¥„‰ ״¨״±…״¬״§״× ״×״¹„״ „״§ ״×״¬״¨ ‚״·.",
     contactCta: "info@multifunnels.com",
-    footerText: "تطوير وكلاء ذكاء اصطناعي للبحث والسفر وأتمتة الأعمال.",
+    footerText: "״×״·ˆ״± ˆƒ„״§״¡ ״°ƒ״§״¡ ״§״µ״·†״§״¹ „„״¨״­״« ˆ״§„״³״± ˆ״£״×…״×״© ״§„״£״¹…״§„.",
   },
   ja: {
-    languageLabel: "言語",
-    navAgents: "エージェント",
-    navPlatforms: "プラットフォーム",
-    navIntegration: "連携",
-    navContact: "お問い合わせ",
-    eyebrow: "AIエージェント開発会社",
-    heroTitle: "検索し、推論し、予約し、連携するAIエージェントを開発します。",
+    languageLabel: "ט¨€ט×",
+    navAgents: "ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆ",
+    navPlatforms: "דƒ—דƒ©דƒƒדƒˆדƒ•ד‚©דƒ¼דƒ ",
+    navIntegration: "י€£ז÷",
+    navContact: "דו•ד„וˆד‚ד›",
+    eyebrow: "AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆי–‹ח™÷ה¼ח₪¾",
+    heroTitle: "ז₪ח´¢ד—ד€ז¨ט«–ד—ד€ה÷ˆח´„ד—ד€י€£ז÷ד™ד‚‹AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד‚’י–‹ח™÷ד—ד¾ד™ד€‚",
     heroCopy:
-      "Multifunnelsは、旅行、ホテル、航空券、ビジネス検索の複雑な流れを、MCP対応APIと本番品質の自動化で信頼できるエージェント製品に変えます。",
-    primaryCta: "AIエージェントを作る",
-    secondaryCta: "プラットフォームを見る",
-    agentsKicker: "開発領域",
-    agentsTitle: "高い意図を持つ検索とコンバージョンのためのエージェント製品。",
-    featureOneTitle: "検索エージェント",
-    featureOneCopy: "自然言語で条件を理解し、選択肢を比較し、実行可能な結果を返す発見型エージェント。",
-    featureTwoTitle: "予約ワークフロー",
-    featureTwoCopy: "ホテル、航空券、サービスファネル向けの、状態管理、検証、引き継ぎが明確なガイド型フロー。",
-    featureThreeTitle: "MCP連携",
-    featureThreeCopy: "ライブ在庫、業務システム、外部アプリケーションへエージェントを接続するツール対応API。",
-    platformsKicker: "稼働中のエコシステム",
-    platformsTitle: "実用的なAI旅行スタックは、すでに動いています。",
-    moodtripCopy: "旅行者が希望する滞在を説明すると、関連性の高いホテル候補を受け取れる検索体験。",
-    flightsCopy: "目的地、日付、ルートをすばやく探索するためのMoodTrip.Aiの航空券検索製品。",
-    hotelAgentCopy: "ホテル検索機能をAIアシスタントやエージェント型ワークフローにつなぐMCPエンドポイント。",
-    flightAgentCopy: "ライブ旅行ツールを扱うアシスタント構築向けの航空券検索MCP HTTPエンドポイント。",
-    visitSite: "サイトを見る",
-    viewEndpoint: "エンドポイントを見る",
-    processKicker: "提供方法",
-    processTitle: "ファネル設計から稼働するAIエージェントへ。",
-    stepOneTitle: "ファネルを整理",
-    stepOneCopy: "ユーザー意図、制約、ツール、コンバージョンポイントを定義します。",
-    stepTwoTitle: "ツールを接続",
-    stepTwoCopy: "API、MCPサーバー、データソース、業務システムを接続します。",
-    stepThreeTitle: "エージェントを公開",
-    stepThreeCopy: "監視、改善、明確な次のアクションを備えた測定可能な製品として公開します。",
-    contactKicker: "開発を始める",
-    contactTitle: "あなたのファネルをAI製品に変えましょう。",
+      "Multifunnelsד¯ד€ז—…ט¡ד€דƒ›דƒ†דƒ«ד€טˆ×ח©÷וˆ¸ד€דƒ“ד‚¸דƒד‚¹ז₪ח´¢ד®ט₪‡י›‘ד×זµד‚ד‚’ד€MCPו¯¾ו¿APIד¨ז¬ח•×ו“ט³×ד®ט‡×ו‹•ו–ד§ה¿¡י ¼ד§דד‚‹ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆט£½ו“ד«ו₪‰דˆד¾ד™ד€‚",
+    primaryCta: "AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד‚’ה½ד‚‹",
+    secondaryCta: "דƒ—דƒ©דƒƒדƒˆדƒ•ד‚©דƒ¼דƒ ד‚’ט¦‹ד‚‹",
+    agentsKicker: "י–‹ח™÷י ˜ו",
+    agentsTitle: "י«˜ד„ז„ו›³ד‚’זד₪ז₪ח´¢ד¨ד‚³דƒ³דƒדƒ¼ד‚¸דƒ§דƒ³ד®דד‚ד®ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆט£½ו“ד€‚",
+    featureOneTitle: "ז₪ח´¢ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆ",
+    featureOneCopy: "ט‡×ח„¶ט¨€ט×ד§ז¡ה»¶ד‚’ח†ט§£ד—ד€י¸זט‚¢ד‚’ז¯”ט¼ƒד—ד€ו®ט¡ו¯טƒ½ד×חµזד‚’ט¿”ד™ח™÷ט¦‹ו‹ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד€‚",
+    featureTwoTitle: "ה÷ˆח´„דƒ¯דƒ¼ד‚¯דƒ•דƒ­דƒ¼",
+    featureTwoCopy: "דƒ›דƒ†דƒ«ד€טˆ×ח©÷וˆ¸ד€ד‚µדƒ¼דƒ“ד‚¹דƒ•ד‚¡דƒדƒ«ו‘ד‘ד®ד€ח¶ז…‹ח®¡ח†ד€ז₪ט¨¼ד€ו¼•דח¶™דדז˜ח¢÷ד×ד‚¬ד‚₪דƒ‰ו‹דƒ•דƒ­דƒ¼ד€‚",
+    featureThreeTitle: "MCPי€£ז÷",
+    featureThreeCopy: "דƒ©ד‚₪דƒ–ו¨ו÷«ד€ז¥­ו‹™ד‚·ד‚¹דƒ†דƒ ד€ו₪–יƒ¨ד‚¢דƒ—דƒ×ד‚±דƒ¼ד‚·דƒ§דƒ³ד¸ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד‚’ז¥ח¶ד™ד‚‹דƒ„דƒ¼דƒ«ו¯¾ו¿APIד€‚",
+    platformsKicker: "ח¨¼וƒה¸­ד®ד‚¨ד‚³ד‚·ד‚¹דƒ†דƒ ",
+    platformsTitle: "ו®ח”¨ח„ד×AIז—…ט¡ד‚¹ד‚¿דƒƒד‚¯ד¯ד€ד™ד§ד«ו‹•ד„ד¦ד„ד¾ד™ד€‚",
+    moodtripCopy: "ז—…ט¡ט€…דו¸ז›ד™ד‚‹ז»ו¨ד‚’ט×¬ז˜ד™ד‚‹ד¨ד€י–¢י€£ז€§ד®י«˜ד„דƒ›דƒ†דƒ«ו€™ט£ד‚’ו—ד‘ו–ד‚ד‚‹ז₪ח´¢ה½“י¨“ד€‚",
+    agentRoamCopy: "AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆו¯¾ו¿ד®ז—…ט¡eSIMדƒדƒ¼ד‚±דƒƒדƒˆדƒ—דƒ¬ד‚₪ד‚¹ד€‚דƒ×ד‚¢דƒ«ד‚¿ד‚₪דƒ ד®דƒ—דƒ©דƒ³ז¯”ט¼ƒד€ז—ו·ט³‡ח”£ז±÷ז¸ˆד€QRי…ה¿¡ד€MCPד«ד‚ˆד‚‹ט³¼ו…¥דƒ•דƒ­דƒ¼ד‚’זה¾›ד—ד¾ד™ד€‚",
+    flightsCopy: "ח›®ח„ו°ד€ז—¥ה»˜ד€דƒ«דƒ¼דƒˆד‚’ד™ד°ד‚„דז¢ח´¢ד™ד‚‹דד‚ד®MoodTrip.Aiד®טˆ×ח©÷וˆ¸ז₪ח´¢ט£½ו“ד€‚",
+    hotelAgentCopy: "דƒ›דƒ†דƒ«ז₪ח´¢ז©טƒ½ד‚’AIד‚¢ד‚·ד‚¹ד‚¿דƒ³דƒˆד‚„ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆו‹דƒ¯דƒ¼ד‚¯דƒ•דƒ­דƒ¼ד«ד₪ד×דMCPד‚¨דƒ³דƒ‰דƒד‚₪דƒ³דƒˆד€‚",
+    flightAgentCopy: "דƒ©ד‚₪דƒ–ז—…ט¡דƒ„דƒ¼דƒ«ד‚’ז‰±ד†ד‚¢ד‚·ד‚¹ד‚¿דƒ³דƒˆז§‹ח¯‰ו‘ד‘ד®טˆ×ח©÷וˆ¸ז₪ח´¢MCP HTTPד‚¨דƒ³דƒ‰דƒד‚₪דƒ³דƒˆד€‚",
+    visitSite: "ד‚µד‚₪דƒˆד‚’ט¦‹ד‚‹",
+    viewEndpoint: "ד‚¨דƒ³דƒ‰דƒד‚₪דƒ³דƒˆד‚’ט¦‹ד‚‹",
+    processKicker: "זה¾›ז–¹ז³•",
+    processTitle: "דƒ•ד‚¡דƒדƒ«ט¨­ט¨ˆד‹ד‚‰ח¨¼וƒד™ד‚‹AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד¸ד€‚",
+    stepOneTitle: "דƒ•ד‚¡דƒדƒ«ד‚’ז•´ח†",
+    stepOneCopy: "דƒ¦דƒ¼ד‚¶דƒ¼ז„ו›³ד€וˆ¶ח´„ד€דƒ„דƒ¼דƒ«ד€ד‚³דƒ³דƒדƒ¼ד‚¸דƒ§דƒ³דƒד‚₪דƒ³דƒˆד‚’ו®ח¾©ד—ד¾ד™ד€‚",
+    stepTwoTitle: "דƒ„דƒ¼דƒ«ד‚’ז¥ח¶",
+    stepTwoCopy: "APIד€MCPד‚µדƒ¼דƒדƒ¼ד€דƒ‡דƒ¼ד‚¿ד‚½דƒ¼ד‚¹ד€ז¥­ו‹™ד‚·ד‚¹דƒ†דƒ ד‚’ז¥ח¶ד—ד¾ד™ד€‚",
+    stepThreeTitle: "ד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד‚’ו…¬י–‹",
+    stepThreeCopy: "ח›£ט¦–ד€ז”¹ו–„ד€ז˜ח¢÷ד×ז¬¡ד®ד‚¢ד‚¯ד‚·דƒ§דƒ³ד‚’ו‚™דˆדז¸¬ו®ו¯טƒ½ד×ט£½ו“ד¨ד—ד¦ו…¬י–‹ד—ד¾ד™ד€‚",
+    contactKicker: "י–‹ח™÷ד‚’ו§‹ד‚ד‚‹",
+    contactTitle: "ד‚ד×דד®דƒ•ד‚¡דƒדƒ«ד‚’AIט£½ו“ד«ו₪‰דˆד¾ד—ד‚‡ד†ד€‚",
     contactCopy:
-      "Multifunnelsは、答えるだけでなく実行するソフトウェアを必要とする企業向けに、AIエージェント、MCP連携、検索製品を開発します。",
+      "Multifunnelsד¯ד€ח­”דˆד‚‹ד ד‘ד§ד×דו®ט¡ד™ד‚‹ד‚½דƒ•דƒˆד‚¦ד‚§ד‚¢ד‚’ו¿…ט¦ד¨ד™ד‚‹ה¼ז¥­ו‘ד‘ד«ד€AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆד€MCPי€£ז÷ד€ז₪ח´¢ט£½ו“ד‚’י–‹ח™÷ד—ד¾ד™ד€‚",
     contactCta: "info@multifunnels.com",
-    footerText: "検索、旅行、業務自動化のためのAIエージェント開発。",
+    footerText: "ז₪ח´¢ד€ז—…ט¡ד€ז¥­ו‹™ט‡×ו‹•ו–ד®דד‚ד®AIד‚¨דƒ¼ד‚¸ד‚§דƒ³דƒˆי–‹ח™÷ד€‚",
   },
 };
 
@@ -935,3 +888,4 @@ applyLanguage(initialLanguage);
 </script>
   </body>
 </html>
+
