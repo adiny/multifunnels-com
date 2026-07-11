@@ -641,6 +641,7 @@ select {
 }
 .product-screen { padding: clamp(14px, 2vw, 22px); direction: ltr; }
 .product-screen svg { display: block; width: 100%; height: auto; }
+.product-screen-img { display: block; width: 100%; height: auto; }
 
 /* Split layout for the featured AgentRoam card */
 .card-featured-split {
