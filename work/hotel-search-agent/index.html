@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hotel Search Agent MCP Skill | Multifunnels</title>
-    <meta name="description" content="Give your AI agent the power to search hotels with MoodTrip.ai MCP tools: 11 tools, 2M+ hotels, 195 countries, no API key required." />
-    <link rel="canonical" href="https://multifunnels.com/hotel-search-agent" />
+    <title>HotelSearchAgent MCP Infrastructure Project | Multifunnels</title>
+    <meta
+      name="description"
+      content="How Multifunnels built the MoodTrip HotelSearchAgent MCP: 11 tools for hotel search, live inventory, pricing, reviews, and booking handoff — 2M+ hotels, 195 countries, no API key."
+    />
+    <link rel="canonical" href="https://multifunnels.com/work/hotel-search-agent/" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Multifunnels" />
-    <meta property="og:title" content="Hotel Search Agent MCP Skill | Multifunnels" />
-    <meta property="og:description" content="Connect AI assistants to live hotel inventory, pricing, reviews, semantic discovery, and booking handoffs through one MCP endpoint." />
-    <meta property="og:url" content="https://multifunnels.com/hotel-search-agent" />
+    <meta property="og:title" content="HotelSearchAgent MCP Infrastructure Project | Multifunnels" />
+    <meta property="og:description" content="An MCP endpoint for hotel discovery: 11 tools, 2M+ hotels, 195 countries, no API key required." />
+    <meta property="og:url" content="https://multifunnels.com/work/hotel-search-agent/" />
     <meta name="twitter:card" content="summary" />
 
     <!-- Google tag (gtag.js) -->
@@ -39,20 +42,22 @@
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://multifunnels.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Hotel Search Agent", "item": "https://multifunnels.com/hotel-search-agent" }
+            { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://multifunnels.com/work/" },
+            { "@type": "ListItem", "position": 3, "name": "HotelSearchAgent MCP", "item": "https://multifunnels.com/work/hotel-search-agent/" }
           ]
         },
         {
           "@type": "CreativeWork",
-          "name": "MoodTrip HotelSearchAgent MCP skill",
-          "url": "https://multifunnels.com/hotel-search-agent",
+          "name": "MoodTrip HotelSearchAgent MCP",
+          "url": "https://multifunnels.com/work/hotel-search-agent/",
           "creator": { "@id": "https://multifunnels.com/#organization" },
-          "description": "MCP endpoint connecting AI assistants to MoodTrip.ai hotel search: live inventory, pricing, reviews, semantic discovery, and booking handoffs. 11 tools, 2M+ hotels, 195 countries, no API key."
+          "description": "An MCP endpoint for hotel discovery, live inventory, pricing, reviews, semantic hotel search, comparison, and booking handoff. 11 MCP tools, 2M+ hotels, 195 countries, no API key required for the public endpoint."
         }
       ]
     }
     </script>
   </head>
+
   <body>
     <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
 
@@ -65,8 +70,8 @@
         <a href="/#work" data-i18n="navWork">Work</a>
         <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
         <a href="/#mcp" data-i18n="navMcp">MCP</a>
-        <a href="#tools" data-i18n="navTools">Tools</a>
-        <a href="#setup" data-i18n="navSetup">Setup</a>
+        <a href="/#process" data-i18n="navProcess">Process</a>
+        <a href="/#about" data-i18n="navAbout">About</a>
         <a href="/#contact" data-i18n="navContact">Contact</a>
       </nav>
       <div class="header-tools">
@@ -94,10 +99,18 @@
       <a href="/#work" data-i18n="navWork">Work</a>
       <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
       <a href="/#mcp" data-i18n="navMcp">MCP</a>
-      <a href="#tools" data-i18n="navTools">Tools</a>
-      <a href="#setup" data-i18n="navSetup">Setup</a>
+      <a href="/#process" data-i18n="navProcess">Process</a>
+      <a href="/#about" data-i18n="navAbout">About</a>
       <a href="/#contact" data-i18n="navContact">Contact</a>
       <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
+    </nav>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/" data-i18n="breadcrumbHome">Home</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="/work/" data-i18n="navWork">Work</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span aria-current="page">HotelSearchAgent MCP</span>
     </nav>
 
     <main id="main">
@@ -105,19 +118,26 @@
         <div>
           <div class="case-meta">
             <span class="project-logo" style="background:linear-gradient(135deg,#2dd4bf,#23b5ac)" aria-hidden="true">H</span>
-            <span class="project-category">MoodTrip AI HotelSearchAgent</span>
-            <span class="status-live" data-i18n="serverOnline">Server online</span>
+            <span class="project-category" data-i18n="hsaCategory">MCP hotel-search infrastructure</span>
+            <span class="status-live" data-i18n="statusLive">Live</span>
           </div>
-          <h1>Give your AI the power to search hotels</h1>
-          <p class="hero-copy">
-            Multifunnels connects AI assistants to MoodTrip.ai hotel search tools: live hotel inventory,
-            pricing, reviews, semantic discovery, and direct booking handoffs through an MCP-ready endpoint.
+          <h1 data-i18n="hsaCaseTitle">HotelSearchAgent — hotel intelligence for AI agents</h1>
+          <p class="hero-copy" data-i18n="hsaDesc">
+            An MCP endpoint for hotel discovery, live inventory, pricing, reviews, semantic hotel search,
+            comparison, and booking handoff.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#setup" data-i18n="quickSetup">Quick setup</a>
-            <a class="button secondary" href="https://moodtrip.ai/skill" target="_blank" rel="noopener noreferrer" aria-label="Original skill on MoodTrip (opens in a new tab)">Original skill ↗</a>
+            <a class="button primary" href="/hotel-search-agent" data-i18n="openSkillPage">Open skill page</a>
+            <a class="button secondary" href="/#contact" data-i18n="startProject">Start a project</a>
+          </div>
+          <div class="tag-row" style="margin-top:26px">
+            <span class="tag">MCP</span>
+            <span class="tag" data-i18n="tagHotels">Hotels</span>
+            <span class="tag" data-i18n="tagLiveInventory">Live inventory</span>
+            <span class="tag" data-i18n="tagBookingHandoff">Booking handoff</span>
           </div>
         </div>
+
         <div>
           <div class="endpoint-row" style="max-width:520px">
             <code class="ltr-code">https://api.moodtrip.ai/api/mcp-http</code>
@@ -137,46 +157,52 @@
         <div class="section-inner">
           <div class="stat-band">
             <div><strong>11</strong><span data-i18n="hsaStatTools">MCP tools</span></div>
-            <div><strong>0</strong><span data-i18n="hsaStatKeys">API keys needed</span></div>
             <div><strong>2M+</strong><span data-i18n="hsaStatHotels">hotels</span></div>
             <div><strong>195</strong><span data-i18n="hsaStatCountries">countries</span></div>
+            <div><strong>0</strong><span data-i18n="hsaStatKeys">API keys needed</span></div>
           </div>
         </div>
       </section>
 
-      <section id="tools" class="section case-section" style="padding-top:0">
-        <div class="section-inner">
-          <div class="section-heading">
+      <section class="section case-section" style="padding-top:0">
+        <div class="section-inner two-col">
+          <div>
             <p class="section-kicker" data-i18n="hsaToolsKicker">Agent toolset</p>
-            <h2>Hotel search, intelligence, and booking context in one endpoint.</h2>
+            <h2 data-i18n="hsaToolsTitle">Search, intelligence, and utility tools in one endpoint.</h2>
+            <p class="section-lede" data-i18n="hsaToolsCopy">
+              Agents receive structured hotel results they can compare, explain, and hand off to a booking
+              page — grounded in live inventory rather than model memory.
+            </p>
           </div>
-          <div class="mcp-grid">
-            <article class="mcp-card">
-              <h3 data-i18n="hsaGroupSearch">Search</h3>
-              <div class="tool-flow" style="margin-top:0; flex-direction:column; align-items:stretch">
-                <code>search_hotels_by_description</code>
-                <code>searchHotelsWithRates</code>
-                <code>findHotels</code>
-                <code>search_rooms_by_description</code>
-              </div>
-            </article>
-            <article class="mcp-card">
-              <h3 data-i18n="hsaGroupIntelligence">Intelligence</h3>
-              <div class="tool-flow" style="margin-top:0; flex-direction:column; align-items:stretch">
-                <code>getHotelDetails</code>
-                <code>getHotelReviews</code>
-                <code>ask_about_hotel</code>
-                <code>summarizeResults</code>
-              </div>
-            </article>
-            <article class="mcp-card">
-              <h3 data-i18n="hsaGroupUtility">Utility</h3>
-              <div class="tool-flow" style="margin-top:0; flex-direction:column; align-items:stretch">
-                <code>getHotelPriceIndex</code>
-                <code>getCityPriceIndex</code>
-                <code>relaxConstraints</code>
-              </div>
-            </article>
+          <div>
+            <div class="mcp-grid" style="grid-template-columns:1fr; gap:14px">
+              <article class="mcp-card">
+                <h3 data-i18n="hsaGroupSearch">Search</h3>
+                <div class="tool-flow" style="margin-top:0">
+                  <code>search_hotels_by_description</code>
+                  <code>searchHotelsWithRates</code>
+                  <code>findHotels</code>
+                  <code>search_rooms_by_description</code>
+                </div>
+              </article>
+              <article class="mcp-card">
+                <h3 data-i18n="hsaGroupIntelligence">Intelligence</h3>
+                <div class="tool-flow" style="margin-top:0">
+                  <code>getHotelDetails</code>
+                  <code>getHotelReviews</code>
+                  <code>ask_about_hotel</code>
+                  <code>summarizeResults</code>
+                </div>
+              </article>
+              <article class="mcp-card">
+                <h3 data-i18n="hsaGroupUtility">Utility</h3>
+                <div class="tool-flow" style="margin-top:0">
+                  <code>getHotelPriceIndex</code>
+                  <code>getCityPriceIndex</code>
+                  <code>relaxConstraints</code>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -185,7 +211,11 @@
         <div class="section-inner two-col">
           <div>
             <p class="section-kicker" data-i18n="hsaResponseKicker">What agents receive</p>
-            <h2>Structured hotel results your AI can compare, explain, and hand off.</h2>
+            <h2 data-i18n="hsaResponseTitle">Structured results your AI can act on.</h2>
+            <p class="section-lede" data-i18n="hsaResponseCopy">
+              Every search returns machine-readable hotel data — name, rating, live price, tags, and a booking
+              URL — so the agent can compare options and hand the user to a real booking path.
+            </p>
           </div>
           <pre class="code-block"><code>{
   "hotels": [
@@ -206,59 +236,14 @@
       <section class="section case-section">
         <div class="section-inner">
           <div class="section-heading">
-            <p class="section-kicker">How it works</p>
-            <h2>From prompt to hotel shortlist.</h2>
+            <p class="section-kicker" data-i18n="relatedKicker">Related projects</p>
+            <h2 data-i18n="relatedTitle">More from the ecosystem.</h2>
           </div>
-          <div class="process-flow" style="grid-template-columns:repeat(3,minmax(0,1fr))">
-            <div class="process-step">
-              <span class="step-node" aria-hidden="true">1</span>
-              <h3>Install</h3>
-              <p>Add the MCP endpoint to your AI client or agent config.</p>
-            </div>
-            <div class="process-step">
-              <span class="step-node" aria-hidden="true">2</span>
-              <h3>Ask</h3>
-              <p>Users describe the stay they want in natural language.</p>
-            </div>
-            <div class="process-step">
-              <span class="step-node" aria-hidden="true">3</span>
-              <h3>Book</h3>
-              <p>The agent returns options and sends users to MoodTrip.ai booking pages.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="setup" class="section case-section mcp-section">
-        <div class="section-inner two-col">
-          <div>
-            <p class="section-kicker" data-i18n="quickSetup">Quick setup</p>
-            <h2>Add hotel search to your agent.</h2>
-            <p class="section-lede">
-              No API key required. Paste the MCP server URL into a compatible AI client and start asking hotel
-              questions.
-            </p>
-            <div class="mcp-links" style="margin-top:16px">
-              <a href="/work/hotel-search-agent/" data-i18n="viewDocs">View documentation</a>
-              <a href="/integrations" data-i18n="navIntegrations">Integrations</a>
-            </div>
-          </div>
-          <pre class="code-block"><code>{
-  "mcpServers": {
-    "moodtrip-hotel-search": {
-      "url": "https://api.moodtrip.ai/api/mcp-http"
-    }
-  }
-}</code></pre>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-inner">
-          <div class="cta-band">
+          <div class="related-grid" data-related-projects="hotel-search-agent"></div>
+          <div class="cta-band" style="margin-top:44px">
             <div>
-              <h2>Want a custom hotel, flight, or search agent?</h2>
-              <p>We can adapt the same MCP-ready pattern for your inventory, data, CRM, booking engine, or internal workflow.</p>
+              <h2 data-i18n="hsaCtaTitle">Want an MCP server for your inventory?</h2>
+              <p data-i18n="hsaCtaCopy">We can adapt the same MCP-ready pattern for your inventory, data, CRM, booking engine, or internal workflow.</p>
             </div>
             <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
           </div>

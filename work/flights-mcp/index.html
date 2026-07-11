@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flights MCP HTTP Infrastructure Project | Multifunnels</title>
+    <meta
+      name="description"
+      content="How Multifunnels built Flights MCP HTTP: a flight-search MCP endpoint for assistants and agentic applications that need structured travel-search tools."
+    />
+    <link rel="canonical" href="https://multifunnels.com/work/flights-mcp/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Multifunnels" />
+    <meta property="og:title" content="Flights MCP HTTP Infrastructure Project | Multifunnels" />
+    <meta property="og:description" content="A flight-search MCP endpoint for assistants and agentic applications that need structured travel-search tools." />
+    <meta property="og:url" content="https://multifunnels.com/work/flights-mcp/" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH7SKPTEJ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WH7SKPTEJ9');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560;9..144,620&family=Inter:wght@400;500;650;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://multifunnels.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://multifunnels.com/work/" },
+            { "@type": "ListItem", "position": 3, "name": "Flights MCP HTTP", "item": "https://multifunnels.com/work/flights-mcp/" }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Flights MCP HTTP",
+          "url": "https://multifunnels.com/work/flights-mcp/",
+          "creator": { "@id": "https://multifunnels.com/#organization" },
+          "description": "A flight-search MCP endpoint for assistants and agentic applications that need structured travel-search tools."
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Multifunnels home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Multifunnels</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#work" data-i18n="navWork">Work</a>
+        <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
+        <a href="/#mcp" data-i18n="navMcp">MCP</a>
+        <a href="/#process" data-i18n="navProcess">Process</a>
+        <a href="/#about" data-i18n="navAbout">About</a>
+        <a href="/#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <label class="language-picker">
+          <span class="visually-hidden" data-i18n="languageLabel">Language</span>
+          <select data-language-select aria-label="Language">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="he">עברית</option>
+            <option value="ar">العربية</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+        <a class="button primary small header-cta" href="/#contact" data-i18n="startProject">Start a project</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+            <path d="M1 1h18M1 7h18M1 13h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Mobile">
+      <button class="mobile-menu-close" type="button" aria-label="Close menu">✕</button>
+      <a href="/#work" data-i18n="navWork">Work</a>
+      <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
+      <a href="/#mcp" data-i18n="navMcp">MCP</a>
+      <a href="/#process" data-i18n="navProcess">Process</a>
+      <a href="/#about" data-i18n="navAbout">About</a>
+      <a href="/#contact" data-i18n="navContact">Contact</a>
+      <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
+    </nav>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/" data-i18n="breadcrumbHome">Home</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="/work/" data-i18n="navWork">Work</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span aria-current="page">Flights MCP HTTP</span>
+    </nav>
+
+    <main id="main">
+      <section class="case-hero">
+        <div>
+          <div class="case-meta">
+            <span class="project-logo" style="background:linear-gradient(135deg,#8b5cf6,#22d3ee)" aria-hidden="true">F</span>
+            <span class="project-category" data-i18n="fmcpCategory">MCP flight-search infrastructure</span>
+            <span class="status-live" data-i18n="statusLive">Live</span>
+          </div>
+          <h1 data-i18n="fmcpCaseTitle">Flights MCP HTTP — structured flight search for agents</h1>
+          <p class="hero-copy" data-i18n="fmcpDesc">
+            A flight-search MCP endpoint for assistants and agentic applications that need structured
+            travel-search tools.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://api.moodtrip.ai/api/flights/mcp-http" target="_blank" rel="noopener noreferrer" aria-label="View endpoint (opens in a new tab)"><span data-i18n="viewEndpoint">View endpoint</span> ↗</a>
+            <a class="button secondary" href="/#contact" data-i18n="startProject">Start a project</a>
+          </div>
+          <div class="tag-row" style="margin-top:26px">
+            <span class="tag">MCP</span>
+            <span class="tag" data-i18n="tagFlights">Flights</span>
+            <span class="tag" data-i18n="tagStructuredSearch">Structured search</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="endpoint-row" style="max-width:520px">
+            <code class="ltr-code">https://api.moodtrip.ai/api/flights/mcp-http</code>
+            <button class="copy-button" type="button" data-copy="https://api.moodtrip.ai/api/flights/mcp-http" data-copied-label="✓" data-i18n-attr="aria-label:copyEndpointAria" aria-label="Copy MCP endpoint" data-i18n="copyLabel">Copy</button>
+          </div>
+          <pre class="code-block" style="margin-top:14px"><code>{
+  "mcpServers": {
+    "moodtrip-flights": {
+      "url": "https://api.moodtrip.ai/api/flights/mcp-http"
+    }
+  }
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="section case-section" style="padding-top:0">
+        <div class="section-inner two-col">
+          <div>
+            <p class="section-kicker" data-i18n="caseChallengeKicker">The challenge</p>
+            <h2 data-i18n="fmcpChallengeTitle">Assistants need flight data they can reason over.</h2>
+          </div>
+          <div>
+            <p class="section-lede" data-i18n="fmcpChallengeCopy">
+              AI assistants answering travel questions need more than a search link — they need structured
+              route, date, and option data they can compare and explain. Flights MCP HTTP exposes the flight
+              search behind Adin Flights as machine-readable MCP tools over streamable HTTP.
+            </p>
+            <p class="section-lede" style="margin-top:16px" data-i18n="fmcpProductCopy">
+              Any MCP-compatible client can connect to the endpoint and give its users live flight
+              exploration, backed by the same infrastructure that powers the consumer product.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-section mcp-section">
+        <div class="section-inner two-col">
+          <div>
+            <p class="section-kicker" data-i18n="fmcpHowKicker">How it connects</p>
+            <h2 data-i18n="fmcpHowTitle">From assistant to flight options.</h2>
+            <ol class="flow-list" style="margin-top:28px">
+              <li><span><strong data-i18n="fmcpF1">Add the endpoint to an MCP-compatible client</strong></span></li>
+              <li><span><strong data-i18n="fmcpF2">The user asks a flight question in natural language</strong></span></li>
+              <li><span><strong data-i18n="fmcpF3">The agent calls structured flight-search tools</strong></span></li>
+              <li><span><strong data-i18n="fmcpF4">Results return as comparable, explainable options</strong></span></li>
+            </ol>
+          </div>
+          <div>
+            <p class="section-kicker" data-i18n="fmcpPairKicker">Works alongside</p>
+            <h2 data-i18n="fmcpPairTitle">Part of a connected travel stack.</h2>
+            <p class="section-lede" data-i18n="fmcpPairCopy">
+              Flights MCP HTTP pairs with the HotelSearchAgent MCP and the AgentRoam MCP, so one assistant can
+              cover flights, hotels, and travel connectivity through Multifunnels-built infrastructure.
+            </p>
+            <div class="mcp-links" style="margin-top:14px">
+              <a href="/work/hotel-search-agent/">HotelSearchAgent MCP</a>
+              <a href="/work/agentroam/">AgentRoam MCP</a>
+              <a href="https://flights.moodtrip.ai/" target="_blank" rel="noopener noreferrer" aria-label="Adin Flights (opens in a new tab)">Adin Flights ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="relatedKicker">Related projects</p>
+            <h2 data-i18n="relatedTitle">More from the ecosystem.</h2>
+          </div>
+          <div class="related-grid" data-related-projects="flights-mcp"></div>
+          <div class="cta-band" style="margin-top:44px">
+            <div>
+              <h2 data-i18n="hsaCtaTitle">Want an MCP server for your inventory?</h2>
+              <p data-i18n="hsaCtaCopy">We can adapt the same MCP-ready pattern for your inventory, data, CRM, booking engine, or internal workflow.</p>
+            </div>
+            <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Multifunnels home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span>Multifunnels</span>
+          </a>
+          <p data-i18n="footerBlurb">
+            AI product studio for agentic search, commerce, and automation. We build AI products that search,
+            compare, transact, and integrate.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerWork">Work</h4>
+          <ul data-project-links="all"></ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerStudio">Studio</h4>
+          <ul>
+            <li><a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a></li>
+            <li><a href="/#mcp" data-i18n="navMcp">MCP</a></li>
+            <li><a href="/integrations" data-i18n="navIntegrations">Integrations</a></li>
+            <li><a href="/#process" data-i18n="navProcess">Process</a></li>
+            <li><a href="/#about" data-i18n="navAbout">About</a></li>
+            <li><a href="mailto:info@multifunnels.com">info@multifunnels.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Multifunnels.com</span>
+        <span data-i18n="footerTagline">Production-ready AI products, agents, and MCP infrastructure.</span>
+      </div>
+    </footer>
+
+    <script src="/assets/js/projects.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>

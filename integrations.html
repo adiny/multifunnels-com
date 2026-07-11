@@ -1,29 +1,320 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>AI Agent Integrations | MCP, OpenAPI, OAuth | Multifunnels</title>
-    <meta name="description" content="Connect hotel search, flight search, live inventory, and business workflows to Agent Builder, ChatGPT Actions, N8N, Claude Desktop, and custom agents." />
-    <link rel="canonical" href="https://multifunnels.com/integrations.html" />
-    <meta property="og:title" content="One intelligence layer. Any platform. | Multifunnels" /><meta property="og:description" content="MCP, OpenAPI, OAuth, API keys, SSE, and HTTP workflows for production AI agents." /><meta property="og:url" content="https://multifunnels.com/integrations.html" /><meta property="og:type" content="website" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Integrations | MCP, OpenAPI &amp; Automation | Multifunnels</title>
+    <meta name="description" content="Connect hotel search, flight search, travel connectivity, and MCP-ready tools to ChatGPT, Claude, N8N, and agent builders." />
+    <link rel="canonical" href="https://multifunnels.com/integrations" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Multifunnels" />
+    <meta property="og:title" content="AI Integrations | MCP, OpenAPI &amp; Automation | Multifunnels" />
+    <meta property="og:description" content="Connect real search and commerce tools to the AI environment your users already trust — MCP, OpenAPI, OAuth, and HTTP workflows." />
+    <meta property="og:url" content="https://multifunnels.com/integrations" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH7SKPTEJ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WH7SKPTEJ9');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560;9..144,620&family=Inter:wght@400;500;650;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://multifunnels.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Integrations", "item": "https://multifunnels.com/integrations" }
+      ]
+    }
+    </script>
   </head>
-  <body data-page="integrations">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header is-scrolled" data-header><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Multifunnels</span></a><nav class="desktop-nav"><a href="index.html#agents" data-i18n="navAgents">Agents</a><a href="index.html#systems" data-i18n="navProducts">Live products</a><a href="hotel-search-agent.html" data-i18n="navHotel">Hotel skill</a><a class="is-active" href="integrations.html" data-i18n="navIntegrations">Integrations</a><a href="index.html#process" data-i18n="navProcess">How we build</a><a href="mailto:info@multifunnels.com" data-i18n="navContact">Contact</a></nav><div class="header-actions"><label class="locale-control"><span class="sr-only">Language</span><select id="language"><option value="en">EN</option><option value="es">ES</option><option value="he">HE</option><option value="ar">AR</option><option value="ja">JA</option></select></label><button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button><span></span><span></span><span class="sr-only">Open menu</span></button></div><nav class="mobile-menu" id="mobile-menu" hidden data-mobile-menu><a href="index.html#systems">Live products</a><a href="hotel-search-agent.html">Hotel skill</a><a href="integrations.html">Integrations</a><a href="mailto:info@multifunnels.com">Contact</a></nav></header>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Multifunnels home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Multifunnels</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#work" data-i18n="navWork">Work</a>
+        <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
+        <a href="/#mcp" data-i18n="navMcp">MCP</a>
+        <a href="#platforms" data-i18n="navPlatforms">Platforms</a>
+        <a href="#comparison" data-i18n="navComparison">Comparison</a>
+        <a href="/#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <label class="language-picker">
+          <span class="visually-hidden" data-i18n="languageLabel">Language</span>
+          <select data-language-select aria-label="Language">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="he">עברית</option>
+            <option value="ar">العربية</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+        <a class="button primary small header-cta" href="/#contact" data-i18n="startProject">Start a project</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+            <path d="M1 1h18M1 7h18M1 13h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Mobile">
+      <button class="mobile-menu-close" type="button" aria-label="Close menu">✕</button>
+      <a href="/#work" data-i18n="navWork">Work</a>
+      <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
+      <a href="/#mcp" data-i18n="navMcp">MCP</a>
+      <a href="#platforms" data-i18n="navPlatforms">Platforms</a>
+      <a href="#comparison" data-i18n="navComparison">Comparison</a>
+      <a href="/#contact" data-i18n="navContact">Contact</a>
+      <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
+    </nav>
+
     <main id="main">
-      <section class="subpage-hero"><div><p class="eyebrow">INTEGRATION LAYER</p><h1>One intelligence layer.<br />Any platform.</h1><p>Connect hotel search, flight search, inventory, booking handoffs, and operational workflows to the AI platform your product already uses.</p><div class="actions"><a class="button button-signal" href="#explorer">Choose a platform</a><a class="text-link light" href="https://moodtrip.ai/openapi.json" target="_blank" rel="noreferrer">OpenAPI spec ג†—</a></div></div><div class="subpage-flow"><div class="proof-request"><span>SHARED EXECUTION LAYER</span><blockquote>MCP<br />OpenAPI<br />OAuth 2.0</blockquote><div class="constraint-row"><code>X-API-Key</code><code>Bearer token</code><code>SSE</code><code>HTTP</code></div><div class="result-row"><span>CONNECTED OUTPUT</span><strong>Tool results + actions</strong><small>Search ֲ· compare ֲ· book ֲ· trigger</small></div></div></div></section>
+      <section class="case-hero">
+        <div>
+          <p class="eyebrow">MCP server integration</p>
+          <h1>Integrate AI search into any platform.</h1>
+          <p class="hero-copy">
+            Multifunnels helps connect hotel search, flight search, travel connectivity, and business tools to
+            AI platforms with MCP, OpenAPI, OAuth, API keys, and automation workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#platforms">Choose platform</a>
+            <a class="button secondary" href="https://moodtrip.ai/openapi.json" target="_blank" rel="noopener noreferrer" aria-label="OpenAPI spec (opens in a new tab)">OpenAPI spec ↗</a>
+          </div>
+        </div>
+        <div>
+          <pre class="code-block"><code>ChatGPT Actions
+Claude Desktop MCP
+N8N HTTP workflows
+Agent Builder assistants
+Custom OpenAPI tools</code></pre>
+        </div>
+      </section>
 
-      <section class="page-section" id="explorer" aria-labelledby="explorer-heading"><div class="page-section-inner"><div class="split-heading"><h2 id="explorer-heading">Select a platform.<br />See the connection.</h2><p>The explorer uses the verified authentication and output patterns from the existing MoodTrip integrations. All platform data remains available in the comparison table below.</p></div><div class="integration-explorer"><div class="platform-list" role="tablist" aria-label="Platforms"><button class="is-active" role="tab" aria-selected="true" data-platform="agent-builder">Agent Builder</button><button role="tab" aria-selected="false" data-platform="chatgpt">ChatGPT Actions</button><button role="tab" aria-selected="false" data-platform="n8n">N8N</button><button role="tab" aria-selected="false" data-platform="claude">Claude Desktop</button><button role="tab" aria-selected="false" data-platform="custom">Custom agents</button></div><div class="explorer-panel" role="tabpanel" tabindex="0"><p class="section-index">PLATFORM CONNECTION</p><h3 data-field="name">Agent Builder</h3><dl class="explorer-grid"><div><dt>BEST USE CASE</dt><dd data-field="use">Conversational AI</dd></div><div><dt>AUTHENTICATION</dt><dd data-field="auth">X-API-Key</dd></div><div><dt>SETUP</dt><dd data-field="setup">Low complexity</dd></div><div><dt>OUTPUT</dt><dd data-field="output">Structured tool results</dd></div></dl><div class="code-block"><div class="code-header"><span>CONNECTION EXAMPLE</span><button type="button" data-copy-target="platform-config">Copy</button></div><pre id="platform-config"><code data-field="config">X-API-Key: YOUR_KEY</code></pre></div></div></div></div></section>
+      <section class="section" style="padding-top:0">
+        <div class="section-inner">
+          <div class="stat-band">
+            <div><strong>4+</strong><span>AI platforms</span></div>
+            <div><strong>3</strong><span>Live MCP endpoints</span></div>
+            <div><strong>OpenAPI</strong><span>Custom actions</span></div>
+            <div><strong>Live</strong><span>Search data</span></div>
+          </div>
+        </div>
+      </section>
 
-      <section class="page-section section-dark" aria-labelledby="comparison-heading"><div class="page-section-inner"><div class="split-heading"><h2 id="comparison-heading">Protocol clarity.</h2><p>Choose the method that matches the product surface, authentication model, and output your users need.</p></div><table class="comparison-table"><thead><tr><th>Platform</th><th>Authentication</th><th>Setup</th><th>Best for</th><th>Output</th></tr></thead><tbody><tr><td data-label="Platform">Agent Builder</td><td data-label="Authentication">X-API-Key</td><td data-label="Setup">Low</td><td data-label="Best for">Conversational AI</td><td data-label="Output">Structured tool results</td></tr><tr><td data-label="Platform">ChatGPT Actions</td><td data-label="Authentication">OAuth 2.0</td><td data-label="Setup">Medium</td><td data-label="Best for">Custom GPTs</td><td data-label="Output">Cards and action links</td></tr><tr><td data-label="Platform">N8N</td><td data-label="Authentication">Bearer token</td><td data-label="Setup">Low</td><td data-label="Best for">Automation</td><td data-label="Output">Structured JSON</td></tr><tr><td data-label="Platform">Claude Desktop</td><td data-label="Authentication">SSE + API key</td><td data-label="Setup">Low</td><td data-label="Best for">Personal assistants</td><td data-label="Output">Text and booking links</td></tr><tr><td data-label="Platform">Custom agents</td><td data-label="Authentication">MCP / OpenAPI / OAuth</td><td data-label="Setup">Custom</td><td data-label="Best for">Product workflows</td><td data-label="Output">Defined by contract</td></tr></tbody></table></div></section>
+      <section id="platforms" class="section case-section" style="padding-top:0">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Choose your integration platform</p>
+            <h2>Connect real search tools to the AI environment your users already trust.</h2>
+          </div>
+          <div class="mcp-grid" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+            <article class="mcp-card">
+              <span class="tag ltr-code" style="align-self:start">X-API-Key</span>
+              <h3>Agent Builder</h3>
+              <p>Build conversational hotel or flight search agents with simple header authentication and live results.</p>
+              <p class="project-proof">Never-expiring API keys · custom tool instructions</p>
+            </article>
+            <article class="mcp-card">
+              <span class="tag ltr-code" style="align-self:start">OAuth 2.0</span>
+              <h3>ChatGPT Actions</h3>
+              <p>Add hotel search, galleries, and booking actions to custom GPTs and assistant-style experiences.</p>
+              <p class="project-proof">OpenAPI schema · inline hotel cards · token refresh</p>
+            </article>
+            <article class="mcp-card">
+              <span class="tag ltr-code" style="align-self:start">Bearer token</span>
+              <h3>N8N Automation</h3>
+              <p>Trigger hotel searches from CRM, support, analytics, or scheduled travel workflows.</p>
+              <p class="project-proof">HTTP request nodes · transformations · alerts</p>
+            </article>
+            <article class="mcp-card">
+              <span class="tag ltr-code" style="align-self:start">MCP</span>
+              <h3>Claude &amp; MCP clients</h3>
+              <p>Use native MCP patterns to connect AI assistants to hotel search, flight search, and AgentRoam travel-connectivity tools.</p>
+              <p class="project-proof">MCP server config · booking links · confirmation gates</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <section class="page-section" aria-labelledby="resources-heading"><div class="page-section-inner"><div class="split-heading"><h2 id="resources-heading">Developer resources,<br />inside the product.</h2><p>Start with a live endpoint or schema, then adapt the authentication and tool contract to the platform.</p></div><div class="resource-rail"><a href="https://api.moodtrip.ai/api/mcp-http"><span>MCP / HOTEL</span><strong>HotelSearchAgent endpoint ג†’</strong></a><a href="https://api.moodtrip.ai/api/flights/mcp-http"><span>MCP / FLIGHTS</span><strong>Flight search endpoint ג†’</strong></a><a href="https://moodtrip.ai/openapi.json"><span>OPENAPI</span><strong>Full API specification ג†’</strong></a></div></div></section>
+      <section class="section case-section mcp-section">
+        <div class="section-inner two-col">
+          <div>
+            <p class="section-kicker">Quick start</p>
+            <h2>From API access to a working AI tool in four steps.</h2>
+          </div>
+          <ol class="flow-list">
+            <li><span><strong>Generate or configure API access.</strong></span></li>
+            <li><span><strong>Choose MCP, OpenAPI, OAuth, or HTTP workflow.</strong></span></li>
+            <li><span><strong>Add headers, endpoint URLs, and tool descriptions.</strong></span></li>
+            <li><span><strong>Test natural-language prompts against live inventory.</strong></span></li>
+          </ol>
+        </div>
+      </section>
 
-      <section class="page-section developer-cta"><div><p class="section-index">CUSTOM CONNECTION</p><h2>Bring your systems<br />into the flow.</h2></div><div><p>We can design the API contract, authentication, tool descriptions, test prompts, result schema, monitoring, and production handoff for your agent.</p><a class="button button-signal" href="mailto:info@multifunnels.com?subject=AI%20integration">Plan an integration</a></div></section>
+      <section id="comparison" class="section case-section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Integration comparison</p>
+            <h2>Pick the right path for the product you are building.</h2>
+          </div>
+          <div style="overflow-x:auto">
+            <table style="width:100%; min-width:760px; border-collapse:collapse; color:var(--muted); font-size:0.93rem">
+              <thead>
+                <tr style="color:var(--ink-strong); text-align:start">
+                  <th style="padding:14px; border-bottom:1px solid var(--line-strong); text-align:start">Feature</th>
+                  <th style="padding:14px; border-bottom:1px solid var(--line-strong); text-align:start">Agent Builder</th>
+                  <th style="padding:14px; border-bottom:1px solid var(--line-strong); text-align:start">ChatGPT</th>
+                  <th style="padding:14px; border-bottom:1px solid var(--line-strong); text-align:start">N8N</th>
+                  <th style="padding:14px; border-bottom:1px solid var(--line-strong); text-align:start">Claude / MCP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Auth method</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)"><code>X-API-Key</code></td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">OAuth 2.0</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Bearer token</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">MCP endpoint</td>
+                </tr>
+                <tr>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Setup complexity</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Low</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Medium</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Low</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Low</td>
+                </tr>
+                <tr>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Best for</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Conversational AI</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Custom GPTs</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Automation</td>
+                  <td style="padding:14px; border-bottom:1px solid var(--line)">Agent tools</td>
+                </tr>
+                <tr>
+                  <td style="padding:14px">Output style</td>
+                  <td style="padding:14px">Tool results</td>
+                  <td style="padding:14px">Cards and links</td>
+                  <td style="padding:14px">Structured JSON</td>
+                  <td style="padding:14px">Structured tools</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-section mcp-section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Use cases</p>
+            <h2>What teams build with these integrations.</h2>
+          </div>
+          <div class="safeguard-grid">
+            <div class="safeguard"><strong>Travel assistants</strong><span>Conversational hotel and flight planning with live availability.</span></div>
+            <div class="safeguard"><strong>Travel connectivity</strong><span>Agents that search eSIM plans and prepare crypto checkout on AgentRoam — with user confirmation before purchase.</span></div>
+            <div class="safeguard"><strong>Business automation</strong><span>Corporate travel policies, approval flows, and internal booking support.</span></div>
+            <div class="safeguard"><strong>Price monitoring</strong><span>Track rates over time for sales, analytics, and alerts.</span></div>
+            <div class="safeguard"><strong>Customer support</strong><span>Let teams check availability without leaving their workflow.</span></div>
+            <div class="safeguard"><strong>Autonomous agents</strong><span>Agents that search, compare, summarize, and hand off.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-section">
+        <div class="section-inner two-col">
+          <div>
+            <p class="section-kicker">Developer resources</p>
+            <h2>Connect through the surface that fits your stack.</h2>
+            <p class="section-lede">
+              Use MCP endpoints for agent tools, OpenAPI for custom actions, and HTTP workflows for automation
+              platforms.
+            </p>
+            <div class="mcp-links" style="margin-top:16px">
+              <a href="/work/hotel-search-agent/">HotelSearchAgent MCP</a>
+              <a href="/work/flights-mcp/">Flights MCP HTTP</a>
+              <a href="/work/agentroam/">AgentRoam MCP</a>
+            </div>
+          </div>
+          <pre class="code-block"><code>{
+  "hotelMcp": "https://api.moodtrip.ai/api/mcp-http",
+  "hotelApi": "https://api.moodtrip.ai/api/mcp",
+  "flightMcp": "https://api.moodtrip.ai/api/flights/mcp-http",
+  "agentroamMcp": "https://agentroam.ai/api/mcp",
+  "openapi": "https://moodtrip.ai/openapi.json"
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="cta-band">
+            <div>
+              <h2>Multifunnels can wire your agent to the tools that matter.</h2>
+              <p>We design the API contract, tool descriptions, authentication, test prompts, and launch path.</p>
+            </div>
+            <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Multifunnels</span></a><p>Integration layer ֲ· <span id="year"></span></p><nav><a href="hotel-search-agent.html">Hotel skill</a><a href="https://moodtrip.ai/integrations">MoodTrip integrations</a></nav></footer>
-    <script src="script.js" defer></script>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Multifunnels home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span>Multifunnels</span>
+          </a>
+          <p data-i18n="footerBlurb">
+            AI product studio for agentic search, commerce, and automation. We build AI products that search,
+            compare, transact, and integrate.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerWork">Work</h4>
+          <ul data-project-links="all"></ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerStudio">Studio</h4>
+          <ul>
+            <li><a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a></li>
+            <li><a href="/#mcp" data-i18n="navMcp">MCP</a></li>
+            <li><a href="/#process" data-i18n="navProcess">Process</a></li>
+            <li><a href="/#about" data-i18n="navAbout">About</a></li>
+            <li><a href="mailto:info@multifunnels.com">info@multifunnels.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Multifunnels.com</span>
+        <span data-i18n="footerTagline">Production-ready AI products, agents, and MCP infrastructure.</span>
+      </div>
+    </footer>
+
+    <script src="/assets/js/projects.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
-

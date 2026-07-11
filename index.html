@@ -3,122 +3,833 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Multifunnels | AI Agent Development Company</title>
-    <meta name="description" content="Multifunnels builds production AI agents that search, reason, compare, book, automate workflows, and connect to real business systems." />
+    <title>Multifunnels | AI Product Studio for Agents, MCP and Automation</title>
+    <meta
+      name="description"
+      content="Multifunnels builds production-ready AI products, search agents, transactional workflows, and MCP integrations for travel and business platforms."
+    />
     <link rel="canonical" href="https://multifunnels.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://multifunnels.com/" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Multifunnels | From intent to execution" />
-    <meta property="og:description" content="Production AI agents connected to live inventory, APIs, MCP servers, and business workflows." />
+    <meta property="og:site_name" content="Multifunnels" />
+    <meta property="og:title" content="Multifunnels | AI Product Studio for Agents, MCP and Automation" />
+    <meta property="og:description" content="Production-ready AI products, search agents, transactional workflows, and MCP integrations — with live products in hotels, flights, travel connectivity, and crypto checkout." />
     <meta property="og:url" content="https://multifunnels.com/" />
-    <meta property="og:image" content="https://multifunnels.com/assets/ai-agent-command-center.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#111310" />
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Multifunnels | AI Product Studio for Agents, MCP and Automation" />
+    <meta name="twitter:description" content="We build AI products that search, compare, transact, and integrate." />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WH7SKPTEJ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WH7SKPTEJ9');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,560;9..144,620&family=Inter:wght@400;500;650;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"Organization","name":"Multifunnels","url":"https://multifunnels.com/","email":"info@multifunnels.com","sameAs":["https://agentroam.ai/","https://moodtrip.ai/","https://flights.moodtrip.ai/"]}
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://multifunnels.com/#organization",
+          "name": "Multifunnels",
+          "url": "https://multifunnels.com/",
+          "email": "info@multifunnels.com",
+          "description": "AI product studio for agentic search, commerce, and automation. Multifunnels builds AI products that search, compare, transact, and integrate."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://multifunnels.com/#website",
+          "url": "https://multifunnels.com/",
+          "name": "Multifunnels",
+          "publisher": { "@id": "https://multifunnels.com/#organization" },
+          "inLanguage": ["en", "es", "he", "ar", "ja"]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Multifunnels live products and MCP infrastructure",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "AgentRoam.ai",
+                "url": "https://agentroam.ai/",
+                "applicationCategory": "TravelApplication",
+                "operatingSystem": "Web",
+                "description": "AI-ready travel connectivity: eSIM data plans for 110+ destinations, travel gift cards, and airtime with crypto checkout and MCP tools for AI agents."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "MoodTrip.AI",
+                "url": "https://moodtrip.ai/",
+                "applicationCategory": "TravelApplication",
+                "operatingSystem": "Web",
+                "description": "AI hotel discovery: natural-language hotel search with live inventory, reviews, pricing context, and direct booking handoffs."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "Adin Flights",
+                "url": "https://flights.moodtrip.ai/",
+                "applicationCategory": "TravelApplication",
+                "operatingSystem": "Web",
+                "description": "AI flight search for routes, destinations, travel dates, and flight options, connected to the MoodTrip travel ecosystem."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "MoodTrip HotelSearchAgent MCP",
+                "url": "https://multifunnels.com/work/hotel-search-agent/",
+                "description": "An MCP endpoint for hotel discovery with 11 tools, 2M+ hotels, and coverage of 195 countries."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Flights MCP HTTP",
+                "url": "https://multifunnels.com/work/flights-mcp/",
+                "description": "A flight-search MCP endpoint for assistants and agentic applications that need structured travel-search tools."
+              }
+            }
+          ]
+        }
+      ]
+    }
     </script>
   </head>
-  <body data-page="home">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Multifunnels home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Multifunnels home">
+        <span class="brand-mark" aria-hidden="true">M</span>
         <span>Multifunnels</span>
       </a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#agents" data-i18n="navAgents">Agents</a>
-        <a href="#systems" data-i18n="navProducts">Live products</a>
-        <a href="hotel-search-agent.html" data-i18n="navHotel">Hotel skill</a>
-        <a href="integrations.html" data-i18n="navIntegrations">Integrations</a>
-        <a href="#process" data-i18n="navProcess">How we build</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/#work" data-i18n="navWork">Work</a>
+        <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
+        <a href="/#mcp" data-i18n="navMcp">MCP</a>
+        <a href="/#process" data-i18n="navProcess">Process</a>
+        <a href="/#about" data-i18n="navAbout">About</a>
+        <a href="/#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <div class="header-actions">
-        <label class="locale-control"><span class="sr-only">Language</span><select id="language" aria-label="Language"><option value="en">EN</option><option value="es">ES</option><option value="he">HE</option><option value="ar">AR</option><option value="ja">JA</option></select></label>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button><span></span><span></span><span class="sr-only">Open menu</span></button>
+
+      <div class="header-tools">
+        <label class="language-picker">
+          <span class="visually-hidden" data-i18n="languageLabel">Language</span>
+          <select data-language-select aria-label="Language">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="he">עברית</option>
+            <option value="ar">العربية</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+        <a class="button primary small header-cta" href="/#contact" data-i18n="startProject">Start a project</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+            <path d="M1 1h18M1 7h18M1 13h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
       </div>
-      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden data-mobile-menu>
-        <a href="#agents" data-i18n="navAgents">Agents</a><a href="#systems" data-i18n="navProducts">Live products</a><a href="hotel-search-agent.html" data-i18n="navHotel">Hotel skill</a><a href="integrations.html" data-i18n="navIntegrations">Integrations</a><a href="#process" data-i18n="navProcess">How we build</a><a href="#contact" data-i18n="navContact">Contact</a>
-      </nav>
     </header>
 
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Mobile">
+      <button class="mobile-menu-close" type="button" aria-label="Close menu">✕</button>
+      <a href="/#work" data-i18n="navWork">Work</a>
+      <a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a>
+      <a href="/#mcp" data-i18n="navMcp">MCP</a>
+      <a href="/#process" data-i18n="navProcess">Process</a>
+      <a href="/#about" data-i18n="navAbout">About</a>
+      <a href="/#contact" data-i18n="navContact">Contact</a>
+      <a class="button primary" href="/#contact" data-i18n="startProject">Start a project</a>
+    </nav>
+
     <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-grid">
-          <div class="hero-copy-block">
-            <p class="eyebrow" data-i18n="eyebrow">AI agent development company</p>
-            <h1 id="hero-title" data-i18n="heroTitle">From intent<br />to execution.</h1>
-            <p class="hero-lede" data-i18n="heroCopy">Multifunnels builds AI agents that search, reason, compare, book, and connect to the systems your business already uses.</p>
-            <div class="actions"><a class="button button-signal" href="mailto:info@multifunnels.com?subject=Build%20an%20AI%20agent" data-i18n="buildAgent">Build an AI agent</a><a class="text-link" href="#systems" data-i18n="exploreSystems">Explore live systems <span aria-hidden="true">ג†“</span></a></div>
-            <ol class="action-sequence" aria-label="Agent execution sequence"><li data-i18n="search">Search</li><li data-i18n="reason">Reason</li><li data-i18n="compare">Compare</li><li data-i18n="book">Book</li><li data-i18n="integrate">Integrate</li></ol>
+      <!-- ── Hero ─────────────────────────────────────────────────── -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">AI product studio · agents, MCP and automation</p>
+          <h1 id="hero-title" data-i18n="heroTitle">We build AI products that search, compare, transact, and integrate.</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Multifunnels designs and launches production-ready AI agents, search platforms, transactional
+            workflows, and MCP integrations for travel and business applications.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="/#contact" data-track="hero_primary_cta" data-i18n="startProject">Start a project</a>
+            <a class="button secondary" href="/#work" data-i18n="exploreWork">Explore our work</a>
           </div>
-          <div class="multiflow-hero" aria-label="MultiFlow execution: user intents become tool calls and actions">
-            <svg class="flow-lines" viewBox="0 0 760 650" aria-hidden="true" preserveAspectRatio="none">
-              <path class="flow-path path-a" d="M8 84 H150 Q180 84 180 114 V220 Q180 250 210 250 H350" />
-              <path class="flow-path path-b" d="M8 180 H108 Q138 180 138 210 V270 Q138 300 168 300 H350" />
-              <path class="flow-path path-c" d="M8 520 H148 Q178 520 178 490 V390 Q178 360 208 360 H350" />
-              <path class="flow-path path-d" d="M350 250 H456 Q486 250 486 220 V145 Q486 115 516 115 H750" />
-              <path class="flow-path path-e" d="M350 300 H510 Q540 300 540 330 V390 Q540 420 570 420 H750" />
-              <path class="flow-path path-f" d="M350 360 H445 Q475 360 475 390 V510 Q475 540 505 540 H750" />
-            </svg>
-            <div class="intent-stack" aria-hidden="true"><span>ג€Boutique hotel in Paris under ג‚¬300ג€</span><span>ג€Compare eSIM plans for Japanג€</span><span>ג€Best flight for these datesג€</span></div>
-            <div class="flow-core"><span class="core-label">MULTIFLOW</span><strong>Intent<br />engine</strong><small>constraints extracted</small></div>
-            <div class="execution-nodes" aria-hidden="true"><span style="--d:1">hotel.search</span><span style="--d:2">esim.compare</span><span style="--d:3">flight.search</span></div>
-            <div class="action-output" aria-hidden="true"><span>ACTION READY</span><strong>Ranked result</strong><small>booking handoff + workflow trigger</small></div>
+          <p class="hero-proof" data-i18n="heroProof">
+            Live products in hotels, flights, travel connectivity, crypto checkout, and MCP infrastructure.
+          </p>
+        </div>
+
+        <!-- Orchestration canvas: intents and data streams converge through
+             agent nodes into live products. Animates once on load. -->
+        <figure class="orchestration" role="img" aria-label="Diagram: user intent, live inventory, external APIs, business rules, and user confirmation flow through search, compare, validate, confirm, transact, and deliver nodes into live Multifunnels products.">
+          <svg viewBox="0 0 560 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g-teal" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#23b5ac" stop-opacity="0.15"/>
+                <stop offset="1" stop-color="#3ddad0"/>
+              </linearGradient>
+              <linearGradient id="g-out" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#3ddad0"/>
+                <stop offset="1" stop-color="#8b5cf6" stop-opacity="0.75"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Input streams -->
+            <g fill="#a4abb6" font-size="10.5">
+              <circle cx="16" cy="55" r="3.5" fill="#3ddad0"/>
+              <text x="28" y="46">natural-language request</text>
+              <circle cx="16" cy="130" r="3.5" fill="#ff7a59"/>
+              <text x="28" y="121">live inventory</text>
+              <circle cx="16" cy="205" r="3.5" fill="#e4b95b"/>
+              <text x="28" y="196">external API</text>
+              <circle cx="16" cy="280" r="3.5" fill="#8b5cf6" class="m-hide"/>
+              <text x="28" y="271" class="m-hide">business rules</text>
+              <circle cx="16" cy="355" r="3.5" fill="#34d399" class="m-hide"/>
+              <text x="28" y="346" class="m-hide">user confirmation</text>
+            </g>
+
+            <!-- Converging input lines -->
+            <g stroke="url(#g-teal)">
+              <path class="flow-line" d="M22 55 C 110 55, 130 150, 208 172" style="animation-delay:.1s"/>
+              <path class="flow-line" d="M22 130 C 105 130, 140 170, 208 188" style="animation-delay:.25s"/>
+              <path class="flow-line" d="M22 205 C 110 205, 140 208, 208 205" style="animation-delay:.4s"/>
+              <path class="flow-line m-hide" d="M22 280 C 105 280, 140 240, 208 222" style="animation-delay:.55s"/>
+              <path class="flow-line m-hide" d="M22 355 C 110 355, 130 260, 208 238" style="animation-delay:.7s"/>
+            </g>
+
+            <!-- Pipeline nodes -->
+            <g font-size="10.5" text-anchor="middle">
+              <g class="flow-node" style="animation-delay:.8s">
+                <rect x="208" y="120" width="76" height="26" rx="7" fill="#131926" stroke="#2dd4bf" stroke-opacity="0.55"/>
+                <text x="246" y="137" fill="#f4efe6">search</text>
+              </g>
+              <g class="flow-node" style="animation-delay:.95s">
+                <rect x="208" y="156" width="76" height="26" rx="7" fill="#131926" stroke="#2dd4bf" stroke-opacity="0.55"/>
+                <text x="246" y="173" fill="#f4efe6">compare</text>
+              </g>
+              <g class="flow-node m-hide" style="animation-delay:1.1s">
+                <rect x="208" y="192" width="76" height="26" rx="7" fill="#131926" stroke="#e4b95b" stroke-opacity="0.5"/>
+                <text x="246" y="209" fill="#f4efe6">validate</text>
+              </g>
+              <g class="flow-node" style="animation-delay:1.25s">
+                <rect x="208" y="228" width="76" height="26" rx="7" fill="#131926" stroke="#34d399" stroke-opacity="0.7"/>
+                <text x="246" y="245" fill="#34d399">confirm</text>
+              </g>
+              <g class="flow-node m-hide" style="animation-delay:1.4s">
+                <rect x="208" y="264" width="76" height="26" rx="7" fill="#131926" stroke="#8b5cf6" stroke-opacity="0.55"/>
+                <text x="246" y="281" fill="#f4efe6">transact</text>
+              </g>
+              <g class="flow-node" style="animation-delay:1.55s">
+                <rect x="208" y="300" width="76" height="26" rx="7" fill="#131926" stroke="#3ddad0" stroke-opacity="0.55"/>
+                <text x="246" y="317" fill="#f4efe6">deliver</text>
+              </g>
+            </g>
+
+            <!-- Diverging output lines -->
+            <g stroke="url(#g-out)">
+              <path class="flow-line" d="M284 213 C 340 213, 350 60, 396 52" style="animation-delay:1.5s"/>
+              <path class="flow-line" d="M284 213 C 345 213, 350 135, 396 128" style="animation-delay:1.65s"/>
+              <path class="flow-line" d="M284 213 C 350 213, 355 205, 396 204" style="animation-delay:1.8s"/>
+              <path class="flow-line m-hide" d="M284 213 C 345 213, 350 285, 396 280" style="animation-delay:1.95s"/>
+              <path class="flow-line m-hide" d="M284 213 C 340 213, 350 360, 396 356" style="animation-delay:2.1s"/>
+            </g>
+
+            <!-- Output product cards -->
+            <g font-size="10.5">
+              <g class="flow-output" style="animation-delay:2s">
+                <rect x="396" y="32" width="150" height="40" rx="8" fill="#0b1220" stroke="#22d3ee" stroke-opacity="0.6"/>
+                <circle cx="414" cy="52" r="4" fill="#22d3ee"/>
+                <text x="428" y="50" fill="#fbf8f1" font-weight="700">AgentRoam</text>
+                <text x="428" y="64" fill="#6d7480" font-size="8.5">esim · crypto checkout</text>
+              </g>
+              <g class="flow-output" style="animation-delay:2.15s">
+                <rect x="396" y="108" width="150" height="40" rx="8" fill="#131926" stroke="#ff7a59" stroke-opacity="0.55"/>
+                <circle cx="414" cy="128" r="4" fill="#ff7a59"/>
+                <text x="428" y="126" fill="#fbf8f1" font-weight="700">MoodTrip</text>
+                <text x="428" y="140" fill="#6d7480" font-size="8.5">hotel discovery</text>
+              </g>
+              <g class="flow-output" style="animation-delay:2.3s">
+                <rect x="396" y="184" width="150" height="40" rx="8" fill="#131926" stroke="#e4b95b" stroke-opacity="0.5"/>
+                <circle cx="414" cy="204" r="4" fill="#e4b95b"/>
+                <text x="428" y="202" fill="#fbf8f1" font-weight="700">Adin Flights</text>
+                <text x="428" y="216" fill="#6d7480" font-size="8.5">flight search</text>
+              </g>
+              <g class="flow-output m-hide" style="animation-delay:2.45s">
+                <rect x="396" y="260" width="150" height="40" rx="8" fill="#131926" stroke="#2dd4bf" stroke-opacity="0.55"/>
+                <circle cx="414" cy="280" r="4" fill="#2dd4bf" class="flow-pulse"/>
+                <text x="428" y="278" fill="#fbf8f1" font-weight="700">HotelSearchAgent</text>
+                <text x="428" y="292" fill="#6d7480" font-size="8.5">mcp · 11 tools</text>
+              </g>
+              <g class="flow-output m-hide" style="animation-delay:2.6s">
+                <rect x="396" y="336" width="150" height="40" rx="8" fill="#131926" stroke="#8b5cf6" stroke-opacity="0.55"/>
+                <circle cx="414" cy="356" r="4" fill="#8b5cf6" class="flow-pulse"/>
+                <text x="428" y="354" fill="#fbf8f1" font-weight="700">Flights MCP</text>
+                <text x="428" y="368" fill="#6d7480" font-size="8.5">mcp · http</text>
+              </g>
+            </g>
+
+            <style>
+              @media (max-width: 640px) { .m-hide { display: none; } }
+            </style>
+          </svg>
+        </figure>
+      </section>
+
+      <!-- ── Live product strip ───────────────────────────────────── -->
+      <section class="proof-strip" aria-label="Live products">
+        <a href="https://agentroam.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="agentroam" aria-label="AgentRoam.ai (opens in a new tab)"><span class="dot" aria-hidden="true"></span>AgentRoam.ai</a>
+        <a href="https://moodtrip.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="moodtrip" aria-label="MoodTrip.AI (opens in a new tab)"><span class="dot" aria-hidden="true"></span>MoodTrip.AI</a>
+        <a href="https://flights.moodtrip.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="adin-flights" aria-label="Adin Flights (opens in a new tab)"><span class="dot" aria-hidden="true"></span>Adin Flights</a>
+        <a href="/work/hotel-search-agent/" data-track="work_project_opened" data-track-label="hotel-search-agent"><span class="dot" aria-hidden="true"></span>HotelSearchAgent MCP</a>
+        <a href="/work/flights-mcp/" data-track="work_project_opened" data-track-label="flights-mcp"><span class="dot" aria-hidden="true"></span>Flights MCP HTTP</a>
+      </section>
+
+      <!-- ── Work / Live products ─────────────────────────────────── -->
+      <span id="platforms" aria-hidden="true"></span>
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker" data-i18n="workKicker">Live products</p>
+            <h2 id="work-title" data-i18n="workTitle">Products already in market.</h2>
+            <p class="section-lede" data-i18n="workLede">
+              Multifunnels builds and operates real AI products across travel discovery, connectivity,
+              commerce, and agent infrastructure.
+            </p>
+          </div>
+
+          <div class="work-grid">
+            <!-- AgentRoam — featured -->
+            <article class="project-card card-agentroam reveal">
+              <div class="card-featured-split">
+                <div class="project-card-body">
+                  <div class="project-topline">
+                    <span class="project-logo" style="background:linear-gradient(135deg,#22d3ee,#8b5cf6)" aria-hidden="true">A</span>
+                    <div>
+                      <div class="project-name">AgentRoam.ai</div>
+                      <div class="project-category" data-i18n="agentroamCategory">AI-ready travel connectivity</div>
+                    </div>
+                    <span class="status-live" data-i18n="statusLive">Live</span>
+                  </div>
+                  <h3 class="project-headline" data-i18n="agentroamHeadline">Travel connectivity for humans and AI agents.</h3>
+                  <p class="project-copy" data-i18n="agentroamDesc">
+                    AgentRoam is a travel-connectivity platform where travelers can find eSIM data plans, travel
+                    gift cards, and airtime, then pay with stablecoins or crypto. Its MCP layer lets AI agents
+                    search destinations, compare plans, prepare checkout, create orders after explicit user
+                    confirmation, and track delivery.
+                  </p>
+                  <div class="tag-row">
+                    <span class="tag">eSIM</span>
+                    <span class="tag" data-i18n="tagTravelCommerce">Travel commerce</span>
+                    <span class="tag" data-i18n="tagCryptoCheckout">Crypto checkout</span>
+                    <span class="tag">MCP</span>
+                    <span class="tag" data-i18n="tagAiAgents">AI agents</span>
+                  </div>
+                  <p class="project-proof" data-i18n="agentroamProof">110+ eSIM destinations · USDC, USDT, BTC, ETH, SOL</p>
+                  <div class="project-actions">
+                    <a class="button primary small" href="https://agentroam.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="agentroam" aria-label="Visit AgentRoam (opens in a new tab)"><span data-i18n="visitAgentroam">Visit AgentRoam</span> ↗</a>
+                    <a class="link-arrow subtle" href="/work/agentroam/" data-track="work_project_opened" data-track-label="agentroam"><span data-i18n="viewProject">View project</span> <span class="arrow" aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+
+                <figure class="product-visual" role="img" aria-label="AgentRoam interface: destination search, eSIM plan comparison, QR delivery, and crypto checkout.">
+                  <div class="browser-chrome" aria-hidden="true">
+                    <span class="dots"><i></i><i></i><i></i></span>
+                    <span class="url">agentroam.ai</span>
+                  </div>
+                  <div class="product-screen" aria-hidden="true">
+                    <svg viewBox="0 0 440 260" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0" y="0" width="440" height="34" rx="8" fill="#101a2e"/>
+                      <circle cx="18" cy="17" r="6" fill="none" stroke="#22d3ee" stroke-width="1.6"/>
+                      <text x="34" y="21" fill="#5b6b85" font-size="11" font-family="monospace">Where are you traveling? — Japan</text>
+                      <g font-family="monospace">
+                        <rect x="0" y="46" width="284" height="52" rx="8" fill="#0e1626" stroke="#22d3ee" stroke-opacity="0.5"/>
+                        <text x="14" y="68" fill="#fbf8f1" font-size="12" font-weight="700">Japan eSIM · 10 GB · 30 days</text>
+                        <text x="14" y="86" fill="#34d399" font-size="11">pay in USDC · USDT · BTC</text>
+                        <rect x="0" y="106" width="284" height="52" rx="8" fill="#0e1626" stroke="#1d2a44"/>
+                        <text x="14" y="128" fill="#c6cbd4" font-size="12">Japan eSIM · 20 GB · 30 days</text>
+                        <text x="14" y="146" fill="#5b6b85" font-size="11">compare data · days · price</text>
+                        <rect x="0" y="166" width="284" height="52" rx="8" fill="#0e1626" stroke="#1d2a44"/>
+                        <text x="14" y="188" fill="#c6cbd4" font-size="12">Global eSIM · 130+ countries</text>
+                        <text x="14" y="206" fill="#5b6b85" font-size="11">one eSIM · many destinations</text>
+                      </g>
+                      <g>
+                        <rect x="296" y="46" width="144" height="118" rx="8" fill="#0e1626" stroke="#1d2a44"/>
+                        <rect x="322" y="60" width="92" height="66" rx="4" fill="#f4efe6"/>
+                        <g fill="#0b1220">
+                          <rect x="330" y="68" width="14" height="14"/><rect x="352" y="68" width="8" height="8"/>
+                          <rect x="392" y="68" width="14" height="14"/><rect x="368" y="82" width="10" height="10"/>
+                          <rect x="330" y="104" width="14" height="10"/><rect x="352" y="96" width="8" height="14"/>
+                          <rect x="392" y="98" width="14" height="16"/><rect x="374" y="104" width="10" height="10"/>
+                        </g>
+                        <text x="368" y="146" fill="#5b6b85" font-size="10" font-family="monospace" text-anchor="middle">QR delivery</text>
+                        <rect x="296" y="172" width="144" height="46" rx="8" fill="none" stroke="#34d399" stroke-opacity="0.6"/>
+                        <text x="368" y="192" fill="#34d399" font-size="10.5" font-family="monospace" text-anchor="middle">confirm order</text>
+                        <text x="368" y="207" fill="#5b6b85" font-size="9" font-family="monospace" text-anchor="middle">pay from your wallet</text>
+                      </g>
+                      <text x="0" y="248" fill="#3d4b63" font-size="9.5" font-family="monospace">mcp: search → plans → quote → validate → confirm → create → track</text>
+                    </svg>
+                  </div>
+                </figure>
+              </div>
+            </article>
+
+            <!-- MoodTrip -->
+            <article class="project-card card-moodtrip reveal">
+              <div class="project-card-body">
+                <div class="project-topline">
+                  <span class="project-logo" style="background:linear-gradient(135deg,#ff7a59,#e4b95b)" aria-hidden="true">M</span>
+                  <div>
+                    <div class="project-name">MoodTrip.AI</div>
+                    <div class="project-category" data-i18n="moodtripCategory">AI hotel discovery</div>
+                  </div>
+                  <span class="status-live" data-i18n="statusLive">Live</span>
+                </div>
+                <h3 class="project-headline" data-i18n="moodtripHeadline">Describe the stay. Discover the right hotel.</h3>
+                <p class="project-copy" data-i18n="moodtripDesc">
+                  MoodTrip turns natural-language travel preferences into relevant hotel recommendations,
+                  combining semantic discovery, live hotel information, reviews, pricing context, and direct
+                  booking handoffs.
+                </p>
+                <div class="tag-row">
+                  <span class="tag" data-i18n="tagHotels">Hotels</span>
+                  <span class="tag" data-i18n="tagAiSearch">AI search</span>
+                  <span class="tag" data-i18n="tagSemantic">Semantic discovery</span>
+                  <span class="tag" data-i18n="tagBookingHandoff">Booking handoff</span>
+                </div>
+                <p class="project-proof" data-i18n="moodtripProof">2M+ hotels · 195 countries via connected MCP infrastructure</p>
+                <div class="project-actions">
+                  <a class="button secondary small" href="https://moodtrip.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="moodtrip" aria-label="Visit MoodTrip (opens in a new tab)"><span data-i18n="visitMoodtrip">Visit MoodTrip</span> ↗</a>
+                  <a class="link-arrow subtle" href="/work/moodtrip/" data-track="work_project_opened" data-track-label="moodtrip"><span data-i18n="viewProject">View project</span> <span class="arrow" aria-hidden="true">→</span></a>
+                </div>
+              </div>
+              <figure class="product-visual" role="img" aria-label="MoodTrip interface: a natural-language hotel search with matching hotel results.">
+                <div class="browser-chrome" aria-hidden="true">
+                  <span class="dots"><i></i><i></i><i></i></span>
+                  <span class="url">moodtrip.ai</span>
+                </div>
+                <div class="product-screen" aria-hidden="true">
+                  <svg viewBox="0 0 440 150" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="440" height="34" rx="8" fill="#181420"/>
+                    <text x="14" y="21" fill="#b9a89b" font-size="11" font-family="monospace">"quiet boutique hotel near the old town, rooftop view"</text>
+                    <g font-family="monospace">
+                      <rect x="0" y="46" width="212" height="90" rx="8" fill="#151019" stroke="#ff7a59" stroke-opacity="0.45"/>
+                      <rect x="12" y="58" width="60" height="42" rx="4" fill="#241a22"/>
+                      <text x="84" y="72" fill="#fbf8f1" font-size="11.5" font-weight="700">Maison Léa</text>
+                      <text x="84" y="88" fill="#ff9a82" font-size="10">9.2 · rooftop · boutique</text>
+                      <text x="12" y="122" fill="#5f5a66" font-size="10">semantic match · live rates</text>
+                    </g>
+                    <g font-family="monospace">
+                      <rect x="228" y="46" width="212" height="90" rx="8" fill="#151019" stroke="#2a2230"/>
+                      <rect x="240" y="58" width="60" height="42" rx="4" fill="#241a22"/>
+                      <text x="312" y="72" fill="#c6cbd4" font-size="11.5">Casa Miro</text>
+                      <text x="312" y="88" fill="#8a8492" font-size="10">8.9 · historic center</text>
+                      <text x="240" y="122" fill="#5f5a66" font-size="10">reviews · booking handoff</text>
+                    </g>
+                  </svg>
+                </div>
+              </figure>
+            </article>
+
+            <!-- Adin Flights -->
+            <article class="project-card card-flights reveal">
+              <div class="project-card-body">
+                <div class="project-topline">
+                  <span class="project-logo" style="background:linear-gradient(135deg,#e4b95b,#ff7a59)" aria-hidden="true">A</span>
+                  <div>
+                    <div class="project-name">Adin Flights</div>
+                    <div class="project-category" data-i18n="flightsCategory">AI flight search</div>
+                  </div>
+                  <span class="status-live" data-i18n="statusLive">Live</span>
+                </div>
+                <h3 class="project-headline" data-i18n="flightsHeadline">Fast flight discovery for real travel decisions.</h3>
+                <p class="project-copy" data-i18n="flightsDesc">
+                  Adin Flights helps travelers explore routes, destinations, travel dates, and flight options
+                  through a focused search experience connected to the wider MoodTrip travel ecosystem.
+                </p>
+                <div class="tag-row">
+                  <span class="tag" data-i18n="tagFlights">Flights</span>
+                  <span class="tag" data-i18n="tagRouteDiscovery">Route discovery</span>
+                  <span class="tag" data-i18n="tagComparison">AI-assisted comparison</span>
+                </div>
+                <p class="project-proof" data-i18n="flightsProof">Connected to the MoodTrip travel ecosystem</p>
+                <div class="project-actions">
+                  <a class="button secondary small" href="https://flights.moodtrip.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="adin-flights" aria-label="Visit Adin Flights (opens in a new tab)"><span data-i18n="visitFlights">Visit Adin Flights</span> ↗</a>
+                  <a class="link-arrow subtle" href="/work/adin-flights/" data-track="work_project_opened" data-track-label="adin-flights"><span data-i18n="viewProject">View project</span> <span class="arrow" aria-hidden="true">→</span></a>
+                </div>
+              </div>
+              <figure class="product-visual" role="img" aria-label="Adin Flights interface: route search with flight options.">
+                <div class="browser-chrome" aria-hidden="true">
+                  <span class="dots"><i></i><i></i><i></i></span>
+                  <span class="url">flights.moodtrip.ai</span>
+                </div>
+                <div class="product-screen" aria-hidden="true">
+                  <svg viewBox="0 0 440 150" xmlns="http://www.w3.org/2000/svg" font-family="monospace">
+                    <rect x="0" y="0" width="440" height="34" rx="8" fill="#1c1812"/>
+                    <text x="14" y="21" fill="#cbb37a" font-size="11">TLV → NRT · flexible dates · 2 travelers</text>
+                    <rect x="0" y="46" width="440" height="40" rx="8" fill="#16130e" stroke="#e4b95b" stroke-opacity="0.4"/>
+                    <text x="14" y="70" fill="#fbf8f1" font-size="11" font-weight="700">Direct · 11h 40m</text>
+                    <text x="200" y="70" fill="#8a8270" font-size="10.5">best route match</text>
+                    <rect x="0" y="94" width="440" height="40" rx="8" fill="#16130e" stroke="#2a251c"/>
+                    <text x="14" y="118" fill="#c6cbd4" font-size="11">1 stop · BKK · 15h 05m</text>
+                    <text x="200" y="118" fill="#6d675a" font-size="10.5">alternate dates suggested</text>
+                  </svg>
+                </div>
+              </figure>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="systems section-dark" id="systems" aria-labelledby="systems-title">
-        <header class="section-heading grid-12"><div class="section-index">01 / LIVE SYSTEMS</div><div class="section-title"><h2 id="systems-title" data-i18n="systemsTitle">Live systems.<br />Real workflows.</h2><p data-i18n="systemsCopy">Operating products, live endpoints, inventory connections, and conversion pathsג€”not concept work.</p></div></header>
-        <div class="product-landscape" data-product-landscape>
-          <article class="product-feature is-active" tabindex="0" data-product="agentroam"><div class="product-meta"><span>01</span><h3>AgentRoam.ai</h3><p data-i18n="agentRoamCopy">Travel eSIM search and crypto checkout for people and AI agents.</p><dl><div><dt>ROLE</dt><dd>SEARCH ג†’ QUOTE ג†’ ORDER</dd></div><div><dt>PROOF</dt><dd>110+ destinations ֲ· MCP checkout</dd></div></dl><a href="https://agentroam.ai/" target="_blank" rel="noreferrer">Open AgentRoam <span aria-hidden="true">ג†—</span></a></div><div class="product-visual visual-agentroam" aria-label="AgentRoam interface evidence"><div class="ui-topline">agentroam.ai / eSIM</div><strong>Land connected.<br />Pay from your wallet.</strong><div class="ui-data"><span>JAPAN</span><span>10 GB ֲ· 30 DAYS</span><span>USDC</span></div><div class="execution-trace">list_esim_plans ג†’ get_price ג†’ confirm</div></div></article>
-          <article class="product-feature" tabindex="0" data-product="moodtrip"><div class="product-meta"><span>02</span><h3>MoodTrip.Ai</h3><p data-i18n="moodtripCopy">Natural-language hotel discovery connected to live rates and booking paths.</p><dl><div><dt>ROLE</dt><dd>DISCOVER ג†’ RANK ג†’ BOOK</dd></div><div><dt>PROOF</dt><dd>2M+ hotels ֲ· 195 countries</dd></div></dl><a href="https://moodtrip.ai/" target="_blank" rel="noreferrer">Open MoodTrip <span aria-hidden="true">ג†—</span></a></div><div class="product-visual visual-moodtrip" aria-label="MoodTrip hotel search interface evidence"><div class="ui-topline">moodtrip.ai / semantic search</div><strong>Find a romantic boutique hotel in Paris.</strong><div class="hotel-result"><span>Maison Souquet</span><b>9.2</b><small>Paris ֲ· boutique ֲ· historic</small></div><div class="execution-trace">search_hotels_by_description ג†’ 3 ranked</div></div></article>
-          <article class="product-feature" tabindex="0" data-product="flights"><div class="product-meta"><span>03</span><h3>Adin Search Flights</h3><p data-i18n="flightsCopy">Flight search for fast destination, date, route, and itinerary comparison.</p><dl><div><dt>ROLE</dt><dd>SEARCH ג†’ COMPARE</dd></div><div><dt>PROTOCOL</dt><dd>MCP HTTP</dd></div></dl><a href="https://flights.moodtrip.ai/" target="_blank" rel="noreferrer">Open Flights <span aria-hidden="true">ג†—</span></a></div><div class="product-visual visual-flights" aria-label="Flight search interface evidence"><div class="ui-topline">flights.moodtrip.ai / live search</div><strong>TLV <span>ג†’</span> NRT</strong><div class="flight-route"><i></i><span>12h 40m</span><i></i></div><div class="execution-trace">flight.search ג†’ compare itineraries</div></div></article>
-          <div class="endpoint-rail"><a href="hotel-search-agent.html"><span>04</span><strong>HotelSearchAgent MCP</strong><small>11 agent tools</small></a><a href="https://api.moodtrip.ai/api/flights/mcp-http" target="_blank" rel="noreferrer"><span>05</span><strong>Flights MCP HTTP</strong><small>Flight-search endpoint</small></a></div>
+      <!-- ── MCP & agent infrastructure ───────────────────────────── -->
+      <section id="mcp" class="section mcp-section" aria-labelledby="mcp-title">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker" data-i18n="mcpKicker">MCP &amp; agent infrastructure</p>
+            <h2 id="mcp-title" data-i18n="mcpTitle">Infrastructure that gives agents real capabilities.</h2>
+            <p class="section-lede" data-i18n="mcpLede">
+              MCP servers and API integrations that connect AI applications to live inventory, business logic,
+              transactional workflows, and structured results.
+            </p>
+          </div>
+
+          <div class="mcp-grid">
+            <article class="mcp-card reveal">
+              <h3>MoodTrip HotelSearchAgent MCP</h3>
+              <p data-i18n="hsaDesc">
+                An MCP endpoint for hotel discovery, live inventory, pricing, reviews, semantic hotel search,
+                comparison, and booking handoff.
+              </p>
+              <p class="project-proof" data-i18n="hsaProof">11 MCP tools · 2M+ hotels · 195 countries · no API key required</p>
+              <div class="endpoint-row">
+                <code class="ltr-code">https://api.moodtrip.ai/api/mcp-http</code>
+                <button class="copy-button" type="button" data-copy="https://api.moodtrip.ai/api/mcp-http" data-copied-label="✓" data-i18n-attr="aria-label:copyEndpointAria" aria-label="Copy MCP endpoint" data-i18n="copyLabel">Copy</button>
+              </div>
+              <div class="mcp-links">
+                <a href="/hotel-search-agent" data-i18n="openSkillPage">Open skill page</a>
+                <a href="/work/hotel-search-agent/" data-track="work_project_opened" data-track-label="hotel-search-agent" data-i18n="viewDocs">View documentation</a>
+              </div>
+            </article>
+
+            <article class="mcp-card accent-flights reveal">
+              <h3>Flights MCP HTTP</h3>
+              <p data-i18n="fmcpDesc">
+                A flight-search MCP endpoint for assistants and agentic applications that need structured
+                travel-search tools.
+              </p>
+              <p class="project-proof" data-i18n="fmcpProof">Live flight-search tools over streamable HTTP</p>
+              <div class="endpoint-row">
+                <code class="ltr-code">https://api.moodtrip.ai/api/flights/mcp-http</code>
+                <button class="copy-button" type="button" data-copy="https://api.moodtrip.ai/api/flights/mcp-http" data-copied-label="✓" data-i18n-attr="aria-label:copyEndpointAria" aria-label="Copy MCP endpoint" data-i18n="copyLabel">Copy</button>
+              </div>
+              <div class="mcp-links">
+                <a href="https://api.moodtrip.ai/api/flights/mcp-http" target="_blank" rel="noopener noreferrer" aria-label="View endpoint (opens in a new tab)" data-i18n="viewEndpoint">View endpoint</a>
+                <a href="/work/flights-mcp/" data-track="work_project_opened" data-track-label="flights-mcp" data-i18n="viewIntegration">View integration</a>
+              </div>
+            </article>
+
+            <article class="mcp-card accent-agentroam reveal">
+              <h3>AgentRoam MCP</h3>
+              <p data-i18n="armcpDesc">
+                An MCP layer for searching eSIM destinations, comparing plans, quoting crypto checkout,
+                validating orders, creating orders only after user confirmation, and tracking delivery.
+              </p>
+              <p class="project-proof" data-i18n="armcpProof">Transactional tools gated by explicit user confirmation</p>
+              <div class="endpoint-row">
+                <code class="ltr-code">https://agentroam.ai/api/mcp</code>
+                <button class="copy-button" type="button" data-copy="https://agentroam.ai/api/mcp" data-copied-label="✓" data-i18n-attr="aria-label:copyEndpointAria" aria-label="Copy MCP endpoint" data-i18n="copyLabel">Copy</button>
+              </div>
+              <div class="mcp-links">
+                <a href="/work/agentroam/" data-track="work_project_opened" data-track-label="agentroam" data-i18n="viewDevDocs">View developer docs</a>
+                <a href="https://agentroam.ai/" target="_blank" rel="noopener noreferrer" data-track="external_product_visited" data-track-label="agentroam" aria-label="Explore AgentRoam (opens in a new tab)" data-i18n="exploreAgentroam">Explore AgentRoam</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="tool-flow reveal" aria-label="Example agent tool sequence">
+            <code>search destination</code><span class="flow-arrow" aria-hidden="true">→</span>
+            <code>list plans</code><span class="flow-arrow" aria-hidden="true">→</span>
+            <code>get quote</code><span class="flow-arrow" aria-hidden="true">→</span>
+            <code>validate order</code><span class="flow-arrow" aria-hidden="true">→</span>
+            <code class="confirm-gate">user confirms</code><span class="flow-arrow" aria-hidden="true">→</span>
+            <code>create order</code><span class="flow-arrow" aria-hidden="true">→</span>
+            <code>track delivery</code>
+          </div>
+          <p class="tool-flow-note" data-i18n="toolFlowNote">
+            Transactional tools never create an order on their own — every purchase requires explicit user confirmation.
+          </p>
         </div>
       </section>
 
-      <section class="capabilities" id="agents" aria-labelledby="capabilities-title">
-        <header class="section-heading grid-12"><div class="section-index">02 / CAPABILITIES</div><div class="section-title"><h2 id="capabilities-title" data-i18n="capabilitiesTitle">Agents that do more than answer.</h2><p data-i18n="capabilitiesCopy">One continuous execution path from natural-language intent to a measurable business action.</p></div></header>
-        <div class="capability-flow" data-capability-flow>
-          <div class="capability-line" aria-hidden="true"><i></i></div>
-          <article class="capability-step is-active"><span>01</span><h3 data-i18n="search">Search</h3><p data-i18n="searchCopy">Natural-language discovery across live inventory and structured data.</p><code>inventory.query()</code></article>
-          <article class="capability-step"><span>02</span><h3 data-i18n="reason">Reason</h3><p data-i18n="reasonCopy">Extract constraints, compare, rank, relax, and explain.</p><code>constraints.rank()</code></article>
-          <article class="capability-step"><span>03</span><h3 data-i18n="act">Act</h3><p data-i18n="actCopy">Trigger booking handoffs, alerts, requests, and conversion steps.</p><code>workflow.execute()</code></article>
-          <article class="capability-step"><span>04</span><h3 data-i18n="integrate">Integrate</h3><p data-i18n="integrateCopy">Connect MCP, OpenAPI, OAuth, CRM, HTTP, and business tools.</p><code>systems.connect()</code></article>
+      <!-- ── Capabilities ─────────────────────────────────────────── -->
+      <span id="agents" aria-hidden="true"></span>
+      <section id="capabilities" class="section" aria-labelledby="capabilities-title">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker" data-i18n="capKicker">Capabilities</p>
+            <h2 id="capabilities-title" data-i18n="capTitle">From complex funnel to working AI product.</h2>
+          </div>
+
+          <div class="capability-list">
+            <div class="capability-row reveal">
+              <span class="capability-num" aria-hidden="true">01</span>
+              <h3 data-i18n="cap1Title">AI Search &amp; Discovery</h3>
+              <div class="capability-detail">
+                <p data-i18n="cap1Copy">Natural-language agents that understand constraints, search live inventory, compare results, and return actionable options.</p>
+                <span class="capability-example"><span data-i18n="seeLive">Live in</span> <a href="/work/moodtrip/">MoodTrip</a> · <a href="/work/adin-flights/">Adin Flights</a></span>
+              </div>
+            </div>
+            <div class="capability-row reveal">
+              <span class="capability-num" aria-hidden="true">02</span>
+              <h3 data-i18n="cap2Title">Transactional Agent Workflows</h3>
+              <div class="capability-detail">
+                <p data-i18n="cap2Copy">Structured flows that move from discovery to validation, confirmation, checkout, handoff, and status tracking.</p>
+                <span class="capability-example"><span data-i18n="seeLive">Live in</span> <a href="/work/agentroam/">AgentRoam</a></span>
+              </div>
+            </div>
+            <div class="capability-row reveal">
+              <span class="capability-num" aria-hidden="true">03</span>
+              <h3 data-i18n="cap3Title">MCP Servers &amp; Tools</h3>
+              <div class="capability-detail">
+                <p data-i18n="cap3Copy">Machine-readable tools that connect AI applications to inventory, APIs, business logic, and operational systems.</p>
+                <span class="capability-example"><span data-i18n="seeLive">Live in</span> <a href="/work/hotel-search-agent/">HotelSearchAgent MCP</a> · <a href="/work/flights-mcp/">Flights MCP</a> · <a href="/work/agentroam/">AgentRoam MCP</a></span>
+              </div>
+            </div>
+            <div class="capability-row reveal">
+              <span class="capability-num" aria-hidden="true">04</span>
+              <h3 data-i18n="cap4Title">API &amp; Platform Integration</h3>
+              <div class="capability-detail">
+                <p data-i18n="cap4Copy">Connections to travel inventory, payment flows, CRM systems, booking engines, data sources, and third-party services.</p>
+              </div>
+            </div>
+            <div class="capability-row reveal">
+              <span class="capability-num" aria-hidden="true">05</span>
+              <h3 data-i18n="cap5Title">Product UX</h3>
+              <div class="capability-detail">
+                <p data-i18n="cap5Copy">Interfaces for both human users and AI agents, including search, comparison, confirmation, and delivery states.</p>
+              </div>
+            </div>
+            <div class="capability-row reveal">
+              <span class="capability-num" aria-hidden="true">06</span>
+              <h3 data-i18n="cap6Title">Monitoring &amp; Iteration</h3>
+              <div class="capability-detail">
+                <p data-i18n="cap6Copy">Analytics, error handling, observability, conversion measurement, and continuous improvement after launch.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="proof section-dark" aria-labelledby="proof-title">
-        <div class="proof-intro"><p class="section-index">03 / PRODUCT PROOF</p><h2 id="proof-title" data-i18n="proofTitle">Give your AI live hotel intelligence.</h2><p data-i18n="proofCopy">A natural-language request selects the right tool, retrieves live hotel context, ranks the result, and prepares a booking handoff.</p><a class="text-link light" href="hotel-search-agent.html" data-i18n="openHotelSkill">Open HotelSearchAgent <span aria-hidden="true">ג†’</span></a></div>
-        <div class="proof-execution">
-          <div class="proof-request"><span>USER INTENT</span><blockquote>ג€Find a romantic boutique hotel in Paris under ג‚¬300.ג€</blockquote><div class="constraint-row"><code>city: Paris</code><code>price_max: 300 EUR</code><code>style: boutique</code></div><div class="result-row"><span>RESULT</span><strong>Maison Souquet</strong><b>9.2</b><small>ג‚¬285 ֲ· romantic ֲ· historic</small></div></div>
-          <div class="proof-code code-block"><div class="code-header"><span>MCP CONFIG ֲ· JSON</span><button type="button" data-copy-target="hotel-config">Copy</button></div><pre id="hotel-config"><code>{
-  "mcpServers": {
-    "moodtrip-hotel-search": {
-      "url": "https://api.moodtrip.ai/api/mcp-http"
-    }
-  }
-}</code></pre><div class="tool-call"><span>TOOL SELECTED</span><code>search_hotels_by_description</code></div></div>
+      <!-- ── Process ──────────────────────────────────────────────── -->
+      <span id="integration" aria-hidden="true"></span>
+      <section id="process" class="section mcp-section" aria-labelledby="process-title">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker" data-i18n="processKicker">Process</p>
+            <h2 id="process-title" data-i18n="processTitle">How an agent becomes a product.</h2>
+          </div>
+          <div class="process-flow">
+            <div class="process-step reveal">
+              <span class="step-node" aria-hidden="true">1</span>
+              <h3 data-i18n="step1Title">Map the intent</h3>
+              <p data-i18n="step1Copy">Define the user goal, constraints, decision points, data sources, and desired outcome.</p>
+            </div>
+            <div class="process-step reveal">
+              <span class="step-node" aria-hidden="true">2</span>
+              <h3 data-i18n="step2Title">Connect the tools</h3>
+              <p data-i18n="step2Copy">Integrate APIs, MCP servers, inventory, business rules, and operational systems.</p>
+            </div>
+            <div class="process-step reveal">
+              <span class="step-node" aria-hidden="true">3</span>
+              <h3 data-i18n="step3Title">Build the experience and safeguards</h3>
+              <p data-i18n="step3Copy">Create the human and agent interfaces, validation rules, confirmation gates, errors, and handoffs.</p>
+            </div>
+            <div class="process-step reveal">
+              <span class="step-node" aria-hidden="true">4</span>
+              <h3 data-i18n="step4Title">Launch and measure</h3>
+              <p data-i18n="step4Copy">Deploy the product with analytics, monitoring, iteration, and clear conversion events.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="integration-layer" aria-labelledby="integration-title">
-        <header class="section-heading grid-12"><div class="section-index">04 / INTEGRATION LAYER</div><div class="section-title"><h2 id="integration-title" data-i18n="integrationTitle">One intelligence layer.<br />Any platform.</h2><p data-i18n="integrationCopy">Select a platform to see how it connects to the shared Multifunnels execution layer.</p></div></header>
-        <div class="integration-map"><div class="platform-list" role="tablist" aria-label="Integration platforms"><button class="is-active" role="tab" aria-selected="true" data-platform="agent-builder">Agent Builder</button><button role="tab" aria-selected="false" data-platform="chatgpt">ChatGPT Actions</button><button role="tab" aria-selected="false" data-platform="n8n">N8N</button><button role="tab" aria-selected="false" data-platform="claude">Claude Desktop</button><button role="tab" aria-selected="false" data-platform="custom">Custom agents</button></div><div class="integration-core"><span>MULTIFUNNELS</span><strong>Execution layer</strong><small>MCP ֲ· OpenAPI ֲ· OAuth ֲ· HTTP</small></div><div class="platform-detail" role="tabpanel" tabindex="0" data-platform-panel><dl><div><dt>BEST USE</dt><dd data-field="use">Conversational AI</dd></div><div><dt>AUTH</dt><dd data-field="auth">X-API-Key</dd></div><div><dt>SETUP</dt><dd data-field="setup">Low complexity</dd></div><div><dt>OUTPUT</dt><dd data-field="output">Structured tool results</dd></div></dl><pre><code data-field="config">X-API-Key: YOUR_KEY</code></pre><a href="integrations.html">Explore integration details ג†’</a></div></div>
+      <!-- ── Proof / About ─────────────────────────────────────────── -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="section-kicker" data-i18n="aboutKicker">About the studio</p>
+            <h2 id="about-title" data-i18n="aboutTitle">Live systems, not concept demos.</h2>
+            <p class="section-lede" data-i18n="aboutLede">
+              Multifunnels is an AI product studio for agentic search, commerce, and automation. Everything
+              below is running in production today.
+            </p>
+          </div>
+          <div class="proof-grid reveal">
+            <div class="proof-item">
+              <strong data-i18n="proof1Title">Multiple live consumer products</strong>
+              <span data-i18n="proof1Copy">AgentRoam, MoodTrip, and Adin Flights serve real users across hotels, flights, and connectivity.</span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="proof2Title">MCP-ready platforms</strong>
+              <span data-i18n="proof2Copy">Three MCP endpoints expose hotel search, flight search, and travel-connectivity commerce to AI agents.</span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="proof3Title">Transactional confirmation flows</strong>
+              <span data-i18n="proof3Copy">Orders are prepared, validated, and created only after the user explicitly confirms.</span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="proof4Title">Live inventory integrations</strong>
+              <span data-i18n="proof4Copy">Products search live hotel, flight, and eSIM inventory — not cached demo data.</span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="proof5Title">Multilingual interfaces</strong>
+              <span data-i18n="proof5Copy">Products and this studio site ship in English, Spanish, Hebrew, Arabic, and Japanese, with full RTL support.</span>
+            </div>
+            <div class="proof-item">
+              <strong data-i18n="proof6Title">Production monitoring and handoffs</strong>
+              <span data-i18n="proof6Copy">Analytics, error handling, and clear human handoffs keep every launched product measurable.</span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="process section-dark" id="process" aria-labelledby="process-title">
-        <header class="section-heading grid-12"><div class="section-index">05 / DELIVERY</div><div class="section-title"><h2 id="process-title" data-i18n="processTitle">From funnel logic<br />to deployed agent.</h2></div></header>
-        <div class="process-flow"><svg viewBox="0 0 1200 200" aria-hidden="true"><path d="M0 100 H1200"/><circle cx="120" cy="100" r="8"/><circle cx="600" cy="100" r="8"/><circle cx="1080" cy="100" r="8"/></svg><article><span>01</span><h3 data-i18n="mapTitle">Map the funnel</h3><p data-i18n="mapCopy">Identify intent, constraints, decision points, data, and conversion actions.</p></article><article><span>02</span><h3 data-i18n="connectTitle">Connect the tools</h3><p data-i18n="connectCopy">Wire APIs, MCP servers, inventory, CRM, booking engines, and workflows.</p></article><article><span>03</span><h3 data-i18n="launchTitle">Launch the agent</h3><p data-i18n="launchCopy">Deploy, monitor, validate, measure, and improve the complete experience.</p></article></div>
-      </section>
+      <!-- ── Contact ──────────────────────────────────────────────── -->
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-inner">
+          <div class="contact-grid">
+            <div class="contact-side reveal">
+              <p class="section-kicker" data-i18n="contactKicker">Start a project</p>
+              <h2 id="contact-title" data-i18n="contactTitle">Turn your workflow into an AI product.</h2>
+              <p class="section-lede" data-i18n="contactCopy">
+                Tell us what users need to search, compare, decide, or complete. We will map the tools,
+                integrations, safeguards, and product experience required to launch it.
+              </p>
+              <a class="button secondary contact-email" href="mailto:info@multifunnels.com" data-i18n="emailUs">Email Multifunnels</a>
+            </div>
 
-      <section class="final-cta" id="contact" aria-labelledby="contact-title"><div class="cta-flow" aria-hidden="true"><i></i><i></i><i></i><b></b></div><p class="section-index">06 / START</p><h2 id="contact-title" data-i18n="contactTitle">Turn your funnel<br />into an AI product.</h2><p data-i18n="contactCopy">Build an agent that can search, reason, connect, and act inside a real business workflow.</p><div class="actions"><a class="button button-signal" href="mailto:info@multifunnels.com?subject=Build%20an%20AI%20agent" data-i18n="buildAgent">Build an AI agent</a><a class="text-link" href="mailto:info@multifunnels.com">info@multifunnels.com</a></div></section>
+            <div class="reveal">
+              <form class="project-form" name="project-brief" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="project-brief" />
+                <p class="visually-hidden" aria-hidden="true">
+                  <label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+                </p>
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="f-name" data-i18n="formName">Name</label>
+                    <input id="f-name" name="name" type="text" autocomplete="name" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="f-email" data-i18n="formEmail">Work email</label>
+                    <input id="f-email" name="email" type="email" autocomplete="email" required />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="f-company" data-i18n="formCompany">Company</label>
+                  <input id="f-company" name="company" type="text" autocomplete="organization" />
+                </div>
+                <div class="form-field">
+                  <label for="f-goal" data-i18n="formGoal">What do you want the agent to do?</label>
+                  <textarea id="f-goal" name="agent-goal" required></textarea>
+                </div>
+                <div class="form-field">
+                  <label for="f-apis"><span data-i18n="formApis">Existing APIs or data sources</span> <span class="optional" data-i18n="formOptional">(optional)</span></label>
+                  <input id="f-apis" name="apis" type="text" />
+                </div>
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="f-stage" data-i18n="formStage">Product stage</label>
+                    <select id="f-stage" name="stage">
+                      <option value="idea" data-i18n="formStageIdea">Idea</option>
+                      <option value="prototype" data-i18n="formStagePrototype">Prototype</option>
+                      <option value="live" data-i18n="formStageLive">Live product</option>
+                      <option value="scaling" data-i18n="formStageScaling">Scaling</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="f-url"><span data-i18n="formUrl">Project URL</span> <span class="optional" data-i18n="formOptional">(optional)</span></label>
+                    <input id="f-url" name="project-url" type="url" />
+                  </div>
+                </div>
+                <button class="button primary" type="submit" data-i18n="startProject">Start a project</button>
+              </form>
+              <p class="form-success" role="status" data-i18n="formSuccess">
+                Thanks. Your project brief has been received, and we will reply by email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Multifunnels</span></a><p>AI systems studio ֲ· <span id="year"></span></p><nav aria-label="Footer"><a href="https://agentroam.ai/">AgentRoam</a><a href="https://moodtrip.ai/">MoodTrip</a><a href="https://flights.moodtrip.ai/">Flights</a></nav></footer>
-    <script src="script.js" defer></script>
+
+    <!-- ── Footer ───────────────────────────────────────────────── -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Multifunnels home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span>Multifunnels</span>
+          </a>
+          <p data-i18n="footerBlurb">
+            AI product studio for agentic search, commerce, and automation. We build AI products that search,
+            compare, transact, and integrate.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerWork">Work</h4>
+          <ul data-project-links="all"></ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerStudio">Studio</h4>
+          <ul>
+            <li><a href="/#capabilities" data-i18n="navCapabilities">Capabilities</a></li>
+            <li><a href="/#mcp" data-i18n="navMcp">MCP</a></li>
+            <li><a href="/integrations" data-i18n="navIntegrations">Integrations</a></li>
+            <li><a href="/#process" data-i18n="navProcess">Process</a></li>
+            <li><a href="/#about" data-i18n="navAbout">About</a></li>
+            <li><a href="mailto:info@multifunnels.com">info@multifunnels.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Multifunnels.com</span>
+        <span data-i18n="footerTagline">Production-ready AI products, agents, and MCP infrastructure.</span>
+      </div>
+    </footer>
+
+    <script src="/assets/js/projects.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
-

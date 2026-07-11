@@ -2,9 +2,36 @@
   publish = "."
   command = ""
 
+# Serve extensionless URLs regardless of the Pretty URLs site setting,
+# and keep the old .html URLs working via permanent redirects.
+[[redirects]]
+  from = "/hotel-search-agent.html"
+  to = "/hotel-search-agent"
+  status = 301
+
+[[redirects]]
+  from = "/integrations.html"
+  to = "/integrations"
+  status = 301
+
+[[redirects]]
+  from = "/hotel-search-agent"
+  to = "/hotel-search-agent.html"
+  status = 200
+
+[[redirects]]
+  from = "/integrations"
+  to = "/integrations.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
