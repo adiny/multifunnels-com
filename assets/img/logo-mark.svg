@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="MultiFunnels logo">
+  <defs>
+    <linearGradient id="ring" x1="0.8" y1="0" x2="0.1" y2="0.9">
+      <stop offset="0" stop-color="#6D28D9"/>
+      <stop offset="0.45" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#2CB9E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Funnel bars -->
+  <g fill="#F98029">
+    <rect x="1" y="17" width="33" height="8" rx="4"/>
+    <rect x="5" y="30" width="24" height="8" rx="4"/>
+    <rect x="9" y="43" width="16" height="8" rx="4"/>
+    <path d="M13 55 h9 l-3.6 7.2 a1 1 0 0 1 -1.8 0 Z" fill="#FBBF24"/>
+  </g>
+
+  <!-- Gradient ring, open at the upper-left where the funnel enters -->
+  <path d="M 39.5 18 A 37 37 0 1 1 24.5 34.4"
+        fill="none" stroke="url(#ring)" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Light disc so the mark reads on dark backgrounds -->
+  <circle cx="58" cy="50" r="30" fill="#FDFCF9"/>
+
+  <!-- Script m -->
+  <g transform="skewX(-6)" stroke="#1E2A4A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M46 64 C47 56, 48 47, 52 42 C56 38, 60 40, 60 46 C60 52, 59 58, 59 63 C60 55, 62 46, 66 42 C70 38, 74 40, 74 46 C74 52, 73 58, 73 62 C73 65, 76 66, 79 64"/>
+  </g>
+</svg>

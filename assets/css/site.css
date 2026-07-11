@@ -158,6 +158,13 @@ code, .mono {
   border-radius: 9px;
 }
 
+.brand-mark-img {
+  display: block;
+  width: 38px;
+  height: 38px;
+  flex: none;
+}
+
 .nav-links {
   display: flex;
   gap: clamp(12px, 2.2vw, 26px);
