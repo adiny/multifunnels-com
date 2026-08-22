@@ -53,12 +53,12 @@ window.MF_I18N.en = {
   heroTitle: "We build AI products that search, compare, transact, and integrate.",
   heroCopy: "Multifunnels designs and launches production-ready AI agents, search platforms, transactional workflows, and MCP integrations for travel and business applications.",
   exploreWork: "Explore our work",
-  heroProof: "Live products in hotels, flights, travel connectivity, crypto checkout, and MCP infrastructure.",
+  heroProof: "Live products in hotels, flights, global gifting, travel connectivity, crypto checkout, and MCP infrastructure.",
 
   /* Work section */
   workKicker: "Live products",
   workTitle: "Products already in market.",
-  workLede: "Multifunnels builds and operates real AI products across travel discovery, connectivity, commerce, and agent infrastructure.",
+  workLede: "Multifunnels builds and operates real AI products across travel discovery, global gifting, connectivity, commerce, and agent infrastructure.",
 
   /* AgentRoam */
   agentroamCategory: "AI-ready travel connectivity",
@@ -80,6 +80,16 @@ window.MF_I18N.en = {
   flightsDesc: "Adin Flights helps travelers explore routes, destinations, travel dates, and flight options through a focused search experience connected to the wider MoodTrip travel ecosystem.",
   flightsProof: "Connected to the MoodTrip travel ecosystem",
   visitFlights: "Visit Adin Flights",
+  giftroamCategory: "Global gifting for people and AI agents",
+  giftroamHeadline: "Send a gift anywhere. Delivered like you were there.",
+  giftroamDesc: "GiftRoam helps people, teams, and AI agents find gifts by destination, occasion, and budget, verify delivery, and hand off to a signed checkout where the person provides address and payment.",
+  giftroamProof: "200+ countries · delivery included · 6 MCP tools · no API key required",
+  visitGiftroam: "Visit GiftRoam",
+  tagGifts: "Global gifts",
+  tagGlobalDelivery: "Local fulfillment",
+  tagSecureCheckout: "Secure checkout",
+  giftroamMcpDesc: "A privacy-first MCP server for gift discovery, delivery checks, secure checkout links, and order status without exposing addresses or payment details in chat.",
+  giftroamMcpProof: "6 tools · 200+ countries · guest access · OAuth order history",
 
   /* Tags */
   tagTravelCommerce: "Travel commerce",
@@ -143,9 +153,9 @@ window.MF_I18N.en = {
   aboutTitle: "Live systems, not concept demos.",
   aboutLede: "Multifunnels is an AI product studio for agentic search, commerce, and automation. Everything below is running in production today.",
   proof1Title: "Multiple live consumer products",
-  proof1Copy: "AgentRoam, MoodTrip, and Adin Flights serve real users across hotels, flights, and connectivity.",
+  proof1Copy: "AgentRoam, MoodTrip, Adin Flights, and GiftRoam serve real users across hotels, flights, connectivity, and global gifting.",
   proof2Title: "MCP-ready platforms",
-  proof2Copy: "Three MCP endpoints expose hotel search, flight search, and travel-connectivity commerce to AI agents.",
+  proof2Copy: "Four MCP endpoints expose hotel search, flight search, travel connectivity, and global gifting to AI agents.",
   proof3Title: "Transactional confirmation flows",
   proof3Copy: "Orders are prepared, validated, and created only after the user explicitly confirms.",
   proof4Title: "Live inventory integrations",
@@ -325,12 +335,12 @@ window.MF_I18N.es = {
   heroTitle: "Construimos productos de IA que buscan, comparan, transaccionan e integran.",
   heroCopy: "Multifunnels diseña y lanza agentes de IA, plataformas de búsqueda, flujos transaccionales e integraciones MCP listos para producción, para aplicaciones de viajes y negocios.",
   exploreWork: "Explora nuestro trabajo",
-  heroProof: "Productos en producción en hoteles, vuelos, conectividad de viaje, pago con criptomonedas e infraestructura MCP.",
+  heroProof: "Productos en producción en hoteles, vuelos, regalos globales, conectividad de viaje, pago con criptomonedas e infraestructura MCP.",
 
   /* Work section */
   workKicker: "Productos en producción",
   workTitle: "Productos que ya están en el mercado.",
-  workLede: "Multifunnels construye y opera productos de IA reales en descubrimiento de viajes, conectividad, comercio e infraestructura de agentes.",
+  workLede: "Multifunnels construye y opera productos de IA reales en viajes, regalos globales, conectividad, comercio e infraestructura de agentes.",
 
   /* AgentRoam */
   agentroamCategory: "Conectividad de viaje preparada para IA",
@@ -352,6 +362,16 @@ window.MF_I18N.es = {
   flightsDesc: "Adin Flights ayuda a los viajeros a explorar rutas, destinos, fechas de viaje y opciones de vuelo mediante una experiencia de búsqueda enfocada, conectada al ecosistema de viajes de MoodTrip.",
   flightsProof: "Conectado al ecosistema de viajes de MoodTrip",
   visitFlights: "Visitar Adin Flights",
+  giftroamCategory: "Regalos globales para personas y agentes de IA",
+  giftroamHeadline: "Envía un regalo a cualquier lugar. Entregado como si estuvieras allí.",
+  giftroamDesc: "GiftRoam ayuda a personas, equipos y agentes de IA a encontrar regalos por destino, ocasión y presupuesto, comprobar la entrega y pasar a un checkout firmado donde la persona introduce la dirección y el pago.",
+  giftroamProof: "Más de 200 países · entrega incluida · 6 herramientas MCP · sin clave de API",
+  visitGiftroam: "Visitar GiftRoam",
+  tagGifts: "Regalos globales",
+  tagGlobalDelivery: "Preparación local",
+  tagSecureCheckout: "Pago seguro",
+  giftroamMcpDesc: "Servidor MCP centrado en la privacidad para buscar regalos, comprobar entregas, crear enlaces de pago seguros y consultar pedidos sin exponer direcciones ni datos de pago en el chat.",
+  giftroamMcpProof: "6 herramientas · más de 200 países · acceso invitado · historial con OAuth",
 
   /* Tags */
   tagTravelCommerce: "Comercio de viajes",
@@ -415,9 +435,9 @@ window.MF_I18N.es = {
   aboutTitle: "Sistemas en producción, no demos conceptuales.",
   aboutLede: "Multifunnels es un estudio de productos de IA para búsqueda agéntica, comercio y automatización. Todo lo que ves abajo funciona hoy en producción.",
   proof1Title: "Varios productos de consumo en producción",
-  proof1Copy: "AgentRoam, MoodTrip y Adin Flights atienden a usuarios reales en hoteles, vuelos y conectividad.",
+  proof1Copy: "AgentRoam, MoodTrip, Adin Flights y GiftRoam atienden a usuarios reales en hoteles, vuelos, conectividad y regalos globales.",
   proof2Title: "Plataformas preparadas para MCP",
-  proof2Copy: "Tres endpoints MCP exponen búsqueda de hoteles, búsqueda de vuelos y comercio de conectividad de viaje a los agentes de IA.",
+  proof2Copy: "Cuatro endpoints MCP ofrecen a los agentes de IA búsqueda de hoteles, vuelos, conectividad de viaje y regalos globales.",
   proof3Title: "Flujos transaccionales con confirmación",
   proof3Copy: "Los pedidos se preparan, se validan y se crean solo después de que el usuario confirma explícitamente.",
   proof4Title: "Integraciones de inventario en vivo",
@@ -597,12 +617,12 @@ window.MF_I18N.he = {
   heroTitle: "אנחנו בונים מוצרי AI שמחפשים, משווים, מבצעים עסקאות ומתחברים למערכות.",
   heroCopy: "Multifunnels מתכנן ומשיק סוכני AI, פלטפורמות חיפוש, תהליכים טרנזקציוניים ואינטגרציות MCP מוכנים לפרודקשן, עבור עולמות התיירות והעסקים.",
   exploreWork: "גלו את העבודות שלנו",
-  heroProof: "מוצרים חיים במלונות, טיסות, קישוריות לנוסעים, תשלום בקריפטו ותשתיות MCP.",
+  heroProof: "מוצרים חיים במלונות, טיסות, מתנות גלובליות, קישוריות לנוסעים, תשלום בקריפטו ותשתיות MCP.",
 
   /* Work section */
   workKicker: "מוצרים חיים",
   workTitle: "מוצרים שכבר פועלים בשוק.",
-  workLede: "Multifunnels בונה ומפעיל מוצרי AI אמיתיים בתחומי גילוי חוויות נסיעה, קישוריות, מסחר ותשתיות לסוכנים.",
+  workLede: "Multifunnels בונה ומפעיל מוצרי AI אמיתיים בתחומי נסיעות, מתנות גלובליות, קישוריות, מסחר ותשתיות לסוכנים.",
 
   /* AgentRoam */
   agentroamCategory: "קישוריות לנוסעים, מוכנה ל-AI",
@@ -624,6 +644,16 @@ window.MF_I18N.he = {
   flightsDesc: "Adin Flights עוזר לנוסעים לחקור מסלולים, יעדים, תאריכי נסיעה ואפשרויות טיסה דרך חוויית חיפוש ממוקדת, המחוברת לאקוסיסטם הנסיעות הרחב של MoodTrip.",
   flightsProof: "מחובר לאקוסיסטם הנסיעות של MoodTrip",
   visitFlights: "בקרו ב-Adin Flights",
+  giftroamCategory: "מתנות גלובליות לאנשים ולסוכני AI",
+  giftroamHeadline: "שולחים מתנה לכל מקום. נמסרת כאילו הייתם שם.",
+  giftroamDesc: "GiftRoam עוזר לאנשים, לצוותים ולסוכני AI למצוא מתנות לפי יעד, אירוע ותקציב, לבדוק אפשרות משלוח ולעבור לתשלום מאובטח שבו האדם מזין כתובת ופרטי תשלום.",
+  giftroamProof: "יותר מ-200 מדינות · משלוח כלול · 6 כלי MCP · ללא מפתח API",
+  visitGiftroam: "בקרו ב-GiftRoam",
+  tagGifts: "מתנות גלובליות",
+  tagGlobalDelivery: "הרכבה מקומית",
+  tagSecureCheckout: "תשלום מאובטח",
+  giftroamMcpDesc: "שרת MCP ממוקד פרטיות לחיפוש מתנות, בדיקת משלוח, יצירת קישורי תשלום מאובטחים ובדיקת סטטוס הזמנה, בלי לחשוף כתובת או פרטי תשלום בשיחה.",
+  giftroamMcpProof: "6 כלים · יותר מ-200 מדינות · גישת אורח · היסטוריית הזמנות עם OAuth",
 
   /* Tags */
   tagTravelCommerce: "מסחר בתיירות",
@@ -687,9 +717,9 @@ window.MF_I18N.he = {
   aboutTitle: "מערכות חיות, לא הדגמות קונספט.",
   aboutLede: "Multifunnels הוא סטודיו למוצרי AI לחיפוש אייג'נטי, מסחר ואוטומציה. כל מה שמופיע כאן רץ בפרודקשן כבר היום.",
   proof1Title: "כמה מוצרי צריכה חיים",
-  proof1Copy: "AgentRoam,‏ MoodTrip ו-Adin Flights משרתים משתמשים אמיתיים במלונות, בטיסות ובקישוריות.",
+  proof1Copy: "AgentRoam,‏ MoodTrip,‏ Adin Flights ו-GiftRoam משרתים משתמשים אמיתיים במלונות, בטיסות, בקישוריות ובמתנות גלובליות.",
   proof2Title: "פלטפורמות מוכנות ל-MCP",
-  proof2Copy: "שלושה endpoints של MCP חושפים לסוכני AI חיפוש מלונות, חיפוש טיסות ומסחר בקישוריות לנוסעים.",
+  proof2Copy: "ארבעה endpoints של MCP מאפשרים לסוכני AI חיפוש מלונות, חיפוש טיסות, קישוריות לנוסעים ומתנות גלובליות.",
   proof3Title: "תהליכי אישור טרנזקציוניים",
   proof3Copy: "הזמנות מוכנות, מאומתות ונוצרות רק לאחר שהמשתמש מאשר במפורש.",
   proof4Title: "אינטגרציות למלאי חי",
@@ -869,12 +899,12 @@ window.MF_I18N.ar = {
   heroTitle: "نبني منتجات ذكاء اصطناعي تبحث وتقارن وتنفّذ المعاملات وتتكامل.",
   heroCopy: "تصمّم Multifunnels وتطلق وكلاء ذكاء اصطناعي جاهزين للإنتاج، ومنصات بحث، وتدفقات معاملات، وتكاملات MCP لتطبيقات السفر والأعمال.",
   exploreWork: "استكشف أعمالنا",
-  heroProof: "منتجات مباشرة في الفنادق والرحلات الجوية واتصال السفر والدفع بالعملات الرقمية وبنية MCP التحتية.",
+  heroProof: "منتجات مباشرة في الفنادق والرحلات الجوية والهدايا العالمية واتصال السفر والدفع بالعملات الرقمية وبنية MCP التحتية.",
 
   /* Work section */
   workKicker: "منتجات مباشرة",
   workTitle: "منتجات موجودة فعليًا في السوق.",
-  workLede: "تبني Multifunnels وتشغّل منتجات ذكاء اصطناعي حقيقية في اكتشاف السفر والاتصال والتجارة والبنية التحتية للوكلاء.",
+  workLede: "تبني Multifunnels وتشغّل منتجات ذكاء اصطناعي حقيقية في السفر والهدايا العالمية والاتصال والتجارة والبنية التحتية للوكلاء.",
 
   /* AgentRoam */
   agentroamCategory: "اتصال سفر جاهز للذكاء الاصطناعي",
@@ -896,6 +926,16 @@ window.MF_I18N.ar = {
   flightsDesc: "يساعد Adin Flights المسافرين على استكشاف المسارات والوجهات وتواريخ السفر وخيارات الرحلات عبر تجربة بحث مركّزة متصلة بمنظومة MoodTrip الأوسع للسفر.",
   flightsProof: "متصل بمنظومة MoodTrip للسفر",
   visitFlights: "زيارة Adin Flights",
+  giftroamCategory: "هدايا عالمية للأفراد ووكلاء الذكاء الاصطناعي",
+  giftroamHeadline: "أرسل هدية إلى أي مكان. تُسلّم وكأنك هناك.",
+  giftroamDesc: "يساعد GiftRoam الأفراد والفرق ووكلاء الذكاء الاصطناعي في العثور على هدايا حسب الوجهة والمناسبة والميزانية، والتحقق من التسليم، والانتقال إلى دفع آمن يُدخل فيه الشخص العنوان وبيانات الدفع.",
+  giftroamProof: "أكثر من 200 دولة · التسليم مشمول · 6 أدوات MCP · بلا مفتاح API",
+  visitGiftroam: "زيارة GiftRoam",
+  tagGifts: "هدايا عالمية",
+  tagGlobalDelivery: "تجهيز محلي",
+  tagSecureCheckout: "دفع آمن",
+  giftroamMcpDesc: "خادم MCP يركز على الخصوصية لاكتشاف الهدايا والتحقق من التسليم وإنشاء روابط دفع آمنة وتتبع حالة الطلب من دون كشف العنوان أو بيانات الدفع في المحادثة.",
+  giftroamMcpProof: "6 أدوات · أكثر من 200 دولة · وصول ضيف · سجل طلبات عبر OAuth",
 
   /* Tags */
   tagTravelCommerce: "تجارة السفر",
@@ -959,9 +999,9 @@ window.MF_I18N.ar = {
   aboutTitle: "أنظمة تعمل فعليًا، لا عروض مفاهيم.",
   aboutLede: "Multifunnels استوديو منتجات ذكاء اصطناعي للبحث الوكيلي والتجارة والأتمتة. كل ما يلي يعمل في بيئة الإنتاج اليوم.",
   proof1Title: "عدة منتجات استهلاكية مباشرة",
-  proof1Copy: "تخدم AgentRoam وMoodTrip وAdin Flights مستخدمين حقيقيين في الفنادق والرحلات الجوية والاتصال.",
+  proof1Copy: "تخدم AgentRoam وMoodTrip وAdin Flights وGiftRoam مستخدمين حقيقيين في الفنادق والرحلات الجوية والاتصال والهدايا العالمية.",
   proof2Title: "منصات جاهزة لـ MCP",
-  proof2Copy: "ثلاث نقاط نهاية MCP تتيح لوكلاء الذكاء الاصطناعي البحث في الفنادق والرحلات الجوية وتجارة اتصال السفر.",
+  proof2Copy: "أربع نقاط نهاية MCP تتيح لوكلاء الذكاء الاصطناعي البحث في الفنادق والرحلات الجوية واتصال السفر والهدايا العالمية.",
   proof3Title: "تدفقات تأكيد للمعاملات",
   proof3Copy: "تُجهَّز الطلبات ويُتحقق منها ولا تُنشأ إلا بعد تأكيد صريح من المستخدم.",
   proof4Title: "تكاملات مخزون مباشر",
@@ -1141,12 +1181,12 @@ window.MF_I18N.ja = {
   heroTitle: "検索し、比較し、取引し、連携するAIプロダクトを開発します。",
   heroCopy: "Multifunnelsは、旅行およびビジネス向けに、本番運用可能なAIエージェント、検索プラットフォーム、取引ワークフロー、MCPインテグレーションを設計・提供しています。",
   exploreWork: "実績を見る",
-  heroProof: "ホテル、フライト、旅行用通信、暗号資産決済、MCPインフラの各分野で実際に稼働中のプロダクト。",
+  heroProof: "ホテル、フライト、グローバルギフト、旅行用通信、暗号資産決済、MCPインフラの各分野で実際に稼働中のプロダクト。",
 
   /* Work section */
   workKicker: "稼働中のプロダクト",
   workTitle: "すでに市場で稼働しているプロダクト。",
-  workLede: "Multifunnelsは、旅行の検索・発見、通信、コマース、エージェントインフラの各領域で、実際のAIプロダクトを開発・運用しています。",
+  workLede: "Multifunnelsは、旅行、グローバルギフト、通信、コマース、エージェントインフラの各領域で、実際のAIプロダクトを開発・運用しています。",
 
   /* AgentRoam */
   agentroamCategory: "AI対応の旅行用通信",
@@ -1168,6 +1208,16 @@ window.MF_I18N.ja = {
   flightsDesc: "Adin Flightsは、路線、目的地、旅行日程、フライトの選択肢を探索できる、旅行者向けの検索体験です。MoodTripの旅行エコシステム全体と接続しています。",
   flightsProof: "MoodTripの旅行エコシステムに接続",
   visitFlights: "Adin Flightsへ",
+  giftroamCategory: "人とAIエージェントのためのグローバルギフト",
+  giftroamHeadline: "世界のどこへでも。そこにいるようにギフトを届ける。",
+  giftroamDesc: "GiftRoamは、人、チーム、AIエージェントが配送先、用途、予算からギフトを探し、配送可否を確認し、住所と支払い情報を本人が入力する安全なチェックアウトへ引き継げるサービスです。",
+  giftroamProof: "200以上の国と地域 · 配送料込み · MCPツール6種 · APIキー不要",
+  visitGiftroam: "GiftRoamへ",
+  tagGifts: "グローバルギフト",
+  tagGlobalDelivery: "現地発送",
+  tagSecureCheckout: "安全な決済",
+  giftroamMcpDesc: "住所や支払い情報を会話に出さず、ギフト検索、配送確認、安全な決済リンク、注文状況を提供するプライバシー重視のMCPサーバーです。",
+  giftroamMcpProof: "6ツール · 200以上の国と地域 · ゲスト利用 · OAuth注文履歴",
 
   /* Tags */
   tagTravelCommerce: "旅行コマース",
@@ -1231,9 +1281,9 @@ window.MF_I18N.ja = {
   aboutTitle: "コンセプトデモではなく、稼働中のシステム。",
   aboutLede: "Multifunnelsは、エージェント型の検索・コマース・自動化のためのAIプロダクトスタジオです。以下はすべて、現在本番環境で稼働しています。",
   proof1Title: "複数の稼働中コンシューマープロダクト",
-  proof1Copy: "AgentRoam、MoodTrip、Adin Flightsが、ホテル、フライト、通信の各分野で実際のユーザーにサービスを提供しています。",
+  proof1Copy: "AgentRoam、MoodTrip、Adin Flights、GiftRoamが、ホテル、フライト、通信、グローバルギフトの各分野で実際のユーザーにサービスを提供しています。",
   proof2Title: "MCP対応プラットフォーム",
-  proof2Copy: "3つのMCPエンドポイントが、ホテル検索、フライト検索、旅行用通信コマースをAIエージェントに公開しています。",
+  proof2Copy: "4つのMCPエンドポイントが、ホテル検索、フライト検索、旅行用通信、グローバルギフトをAIエージェントに公開しています。",
   proof3Title: "取引の確認フロー",
   proof3Copy: "注文は準備・検証を経て、ユーザーが明示的に確認した後にのみ作成されます。",
   proof4Title: "リアルタイム在庫との連携",
