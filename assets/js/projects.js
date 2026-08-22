@@ -54,6 +54,21 @@ window.MF_PROJECTS = [
     order: 3
   },
   {
+    slug: "giftroam",
+    name: "GiftRoam",
+    type: "product",
+    categoryKey: "giftroamCategory", // "Global gifting for people and AI agents"
+    status: "live",
+    url: "https://giftroam.com/",
+    caseStudyUrl: "https://giftroam.com/",
+    mcpEndpoint: "https://mcp.giftroam.com/mcp",
+    tags: ["Global gifts", "Local fulfillment", "Secure checkout", "MCP", "AI agents"],
+    proof: "200+ countries · delivery included · 6 MCP tools · no API key",
+    accent: "#65a3ff",
+    featured: true,
+    order: 4
+  },
+  {
     slug: "hotel-search-agent",
     name: "HotelSearchAgent MCP",
     type: "infrastructure",
@@ -66,7 +81,7 @@ window.MF_PROJECTS = [
     proof: "11 MCP tools · 2M+ hotels · 195 countries · no API key",
     accent: "#2dd4bf",
     featured: false,
-    order: 4
+    order: 5
   },
   {
     slug: "flights-mcp",
@@ -81,6 +96,6 @@ window.MF_PROJECTS = [
     proof: "Live flight-search tools over MCP HTTP",
     accent: "#8b5cf6",
     featured: false,
-    order: 5
+    order: 6
   }
 ];
