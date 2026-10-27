@@ -43,18 +43,31 @@ exports.contact = async (req, res) => {
     return res.status(400).json({ error: "missing or invalid fields" });
   }
 
+  const company = field(body.company, 300);
+  const stage = field(body.stage, 50);
   await firestore.collection("contact-submissions").add({
     name,
     email,
-    company: field(body.company, 300),
+    company,
     agentGoal,
     apis: field(body.apis, 1000),
-    stage: field(body.stage, 50),
+    stage,
     projectUrl: field(body["project-url"], 500),
     language: field(body.language, 10),
     submittedAt: new Date().toISOString(),
     userAgent: field(req.headers["user-agent"], 300),
   });
+
+  // Structured log entry; a Cloud Monitoring log-based alert emails
+  // info@multifunnels.com for each NEW_SUBMISSION event.
+  console.log(JSON.stringify({
+    message: "NEW_SUBMISSION",
+    name,
+    email,
+    company,
+    stage,
+    goal: agentGoal.slice(0, 200),
+  }));
 
   return res.status(200).json({ ok: true });
 };
