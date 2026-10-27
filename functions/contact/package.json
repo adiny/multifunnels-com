@@ -1,0 +1,12 @@
+{
+  "name": "multifunnels-contact",
+  "private": true,
+  "description": "Contact form endpoint for multifunnels.com (Cloud Function, stores submissions in Firestore)",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^7.10.0"
+  }
+}

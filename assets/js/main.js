@@ -183,24 +183,27 @@
       }
     }, { once: false });
 
+    var CONTACT_ENDPOINT = "https://europe-west1-multifunnels-com.cloudfunctions.net/contact";
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var data = new FormData(form);
       var body = new URLSearchParams();
       data.forEach(function (value, key) { body.append(key, value); });
-      fetch("/", {
+      var submitButton = form.querySelector("button[type='submit']");
+      if (submitButton) submitButton.disabled = true;
+      fetch(CONTACT_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: body.toString()
-      }).then(function () {
+      }).then(function (response) {
+        if (!response.ok) throw new Error("submit failed: " + response.status);
         form.hidden = true;
         var success = document.querySelector(".form-success");
         if (success) success.classList.add("is-visible");
         track("contact_form_submitted", {});
       }).catch(function () {
-        // Fallback: standard submit so Netlify still captures the entry.
-        form.removeAttribute("hidden");
-        form.submit();
+        if (submitButton) submitButton.disabled = false;
+        window.alert("Sorry, something went wrong. Please email info@multifunnels.com instead.");
       });
     });
   }
