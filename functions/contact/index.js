@@ -69,5 +69,45 @@ exports.contact = async (req, res) => {
     goal: agentGoal.slice(0, 200),
   }));
 
+  // Email notification via Resend. Failures are logged but never fail
+  // the request — the submission is already safe in Firestore.
+  if (process.env.RESEND_API_KEY) {
+    try {
+      const esc = (s) => s.replace(/[&<>"]/g, (c) =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+      const row = (label, value) => value
+        ? `<tr><td style="padding:4px 12px 4px 0;color:#667;white-space:nowrap">${label}</td><td style="padding:4px 0">${esc(value)}</td></tr>`
+        : "";
+      const resp = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: process.env.NOTIFY_FROM || "MultiFunnels <notifications@multifunnels.com>",
+          to: [process.env.NOTIFY_TO || "info@multifunnels.com"],
+          reply_to: email,
+          subject: `New project brief: ${name}${company ? " (" + company + ")" : ""}`,
+          html:
+            `<h2 style="font-family:sans-serif">New project brief</h2>` +
+            `<table style="font-family:sans-serif;font-size:14px">` +
+            row("Name", name) + row("Email", email) + row("Company", company) +
+            row("Stage", stage) + row("APIs", field(body.apis, 1000)) +
+            row("Project URL", field(body["project-url"], 500)) +
+            `</table>` +
+            `<p style="font-family:sans-serif;font-size:14px;white-space:pre-wrap">${esc(agentGoal)}</p>` +
+            `<p style="font-family:sans-serif;font-size:12px;color:#889">` +
+            `<a href="https://console.cloud.google.com/firestore/databases/-default-/data/panel/contact-submissions?project=multifunnels-com">All submissions in Firestore</a></p>`,
+        }),
+      });
+      if (!resp.ok) {
+        console.error("resend_error", resp.status, await resp.text());
+      }
+    } catch (e) {
+      console.error("resend_error", e.message);
+    }
+  }
+
   return res.status(200).json({ ok: true });
 };
